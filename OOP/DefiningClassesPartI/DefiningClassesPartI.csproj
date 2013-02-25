@@ -43,9 +43,10 @@
   <ItemGroup>
     <Compile Include="Battery.cs" />
     <Compile Include="BatteryType.cs" />
+    <Compile Include="Call.cs" />
     <Compile Include="Display.cs" />
     <Compile Include="GSM.cs" />
-    <Compile Include="MobilePhone.cs" />
+    <Compile Include="GSMCallHistoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

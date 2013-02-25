@@ -28,6 +28,10 @@ class Display
         }
         set
         {
+            if (value < 0)
+            {
+                throw new ArgumentException();
+            }
             this.colorsNumber = value;
         }
     }
@@ -40,21 +44,31 @@ class Display
         }
         set
         {
+            if (value < 0)
+            {
+                throw new ArgumentException();
+            }
             this.size = value;
         }
     }
 
     public override string ToString()
     {
-        this.Size = size;
-        this.ColorsNumber = colorsNumber;
-
         StringBuilder displayInfo = new StringBuilder();
-        displayInfo.AppendLine("Display");
-        displayInfo.Append("Size");
-        displayInfo.AppendLine(this.Size.ToString());
-        displayInfo.Append("ColorsNumber");
-        displayInfo.AppendLine(this.ColorsNumber.ToString());
+
+        if ((this.Size != null) || (this.ColorsNumber != null))
+        {
+            displayInfo.AppendLine("---Display---");
+        }
+        if (this.Size != null)
+        {
+            displayInfo.AppendLine("Size: " + this.Size.ToString());    
+        }
+        if (this.ColorsNumber != null)
+        {
+            displayInfo.AppendLine("ColorsNumber: " + this.ColorsNumber.ToString());    
+        }
+
         return displayInfo.ToString();
     }
 }

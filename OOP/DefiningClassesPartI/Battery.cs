@@ -8,7 +8,6 @@ class Battery
     private uint? hoursTalk;
     private BatteryType? batteryType;
     
-
     public Battery() : this(null,null,null,null)
     { 
     }
@@ -53,6 +52,10 @@ class Battery
         }
         set
         {
+            if (value < 0)
+            {
+                throw new ArgumentException();
+            }
             this.hoursTalk = value;
         }
     }
@@ -65,6 +68,10 @@ class Battery
         }
         set
         {
+            if (value < 0)
+            {
+                throw new ArgumentException();
+            }
             this.hoursIdle = value;
         }
     }
@@ -84,15 +91,27 @@ class Battery
     public override string ToString()
     {
         StringBuilder batteryInfo = new StringBuilder();
-        batteryInfo.AppendLine("Battery");
-        batteryInfo.Append("BatteryModel");
-        batteryInfo.AppendLine(this.BatteryModel);
-        batteryInfo.Append("HoursIdle");
-        batteryInfo.AppendLine(this.HoursIdle.ToString());
-        batteryInfo.Append("HoursTalk");
-        batteryInfo.AppendLine(this.HoursTalk.ToString());
-        batteryInfo.Append("BatteryType");
-        batteryInfo.AppendLine(this.BatteryType.ToString());
+        if (this.BatteryModel != null || this.HoursIdle != null || this.HoursTalk != null || this.BatteryType != null)
+        {
+            batteryInfo.AppendLine("---Battery---");
+        }
+        if (this.BatteryModel != null)
+        {
+            batteryInfo.AppendLine("BatteryModel: " + this.BatteryModel);    
+        }
+        if (this.HoursIdle != null)
+        {
+            batteryInfo.AppendLine("HoursIdle: " + this.HoursIdle.ToString());            
+        }
+        if (this.HoursTalk != null)
+        {
+            batteryInfo.AppendLine("HoursTalk: " + this.HoursTalk.ToString());      
+        }
+        if (this.BatteryType != null)
+        {
+            batteryInfo.AppendLine( "BatteryType: " + this.BatteryType.ToString());  
+        }
+
         return batteryInfo.ToString();
     }
 }
