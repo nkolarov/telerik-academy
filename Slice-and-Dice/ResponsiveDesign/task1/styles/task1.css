@@ -177,7 +177,7 @@ body #wrapper > section article .article-content p
 
 body #wrapper > footer
 {
-    position: absolute;
+    position: static;
     bottom: 0;
     width: 100%;
     height: 60px;
@@ -191,6 +191,7 @@ body #wrapper > footer h2
 {
     font-size: 1.7em;
 }
+
 @media only screen and (max-width: 960px)
 {
     body #wrapper
@@ -201,10 +202,7 @@ body #wrapper > footer h2
     {
         float: none;
     }
-    body #wrapper > footer 
-    {
-        position: static;
-    }
+
 }
 
 @media only screen and (max-width: 480px)
@@ -218,7 +216,7 @@ body #wrapper > footer h2
     body #wrapper > header h1
     {
         margin: 0 auto;
-        text-align:center;
+        text-align: center;
         font-size: 2.5em;
     }
 
@@ -229,7 +227,7 @@ body #wrapper > footer h2
         text-align: center;
         width: 100%;
         clear: both;
-        font-size:1.5em;
+        font-size: 1.5em;
     }
 
     body #wrapper > section > header 
@@ -243,12 +241,12 @@ body #wrapper > footer h2
         width: 100%;
         border: none;
         border-radius: 0;
-        border-bottom: 1px solid black;        
+        border-bottom: 1px solid black; 
     }
 
     body #wrapper > section > article div.article-content
     {
-        font-size: 0.9em;        
+        font-size: 0.9em; 
     }
 
     body #wrapper > section > article h1
@@ -257,8 +255,8 @@ body #wrapper > footer h2
         font-size: 1.8em;
     }
 
-        body #wrapper > footer 
+    body #wrapper > footer 
     {
-        font-size:smaller;
+        font-size: smaller;
     }
 }
