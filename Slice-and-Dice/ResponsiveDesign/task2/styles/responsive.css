@@ -175,7 +175,7 @@ body #wrapper
 
     body #wrapper>header nav ul li
     {
-        
+        margin: 2px;
         font-size: 1.4em;
     }
     body #wrapper>section article header h1
@@ -206,10 +206,6 @@ body #wrapper
     body #wrapper > header nav ul li ul li
     {
         z-index: 999;
-    }
-    body #wrapper>header nav ul li
-    {
-        margin: 2px;
     }
 }
 
