@@ -1,0 +1,259 @@
+body #wrapper
+{
+    width: 90%;
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1440px)
+{
+    body #wrapper > header h1 a
+    {
+        font-size: 1.5em;
+    }
+    body #wrapper>header h1 a img
+    {
+        height: 120px;
+    }
+    body #wrapper>header > nav > ul >li
+    {
+        
+        font-size: 1.8em;
+    }
+    body #wrapper>header > nav > ul >li>ul>li
+    {
+        
+        font-size: 0.8em;
+    }
+    body #wrapper>section article header h1
+    {
+        font-size: 2em;
+    }
+    body #wrapper>footer h2
+    {
+        font-size: 1.7em;
+
+    }
+    body #wrapper>section article>div p
+    {
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px)
+{
+    body #wrapper > header h1 a
+    {
+        font-size: 1.3em;
+    }
+    body #wrapper>header h1 a img
+    {
+        height: 100px;
+    }
+    body #wrapper>header > nav > ul >li
+    {
+        
+        font-size: 1.6em;
+    }
+    body #wrapper>header > nav > ul >li>ul>li
+    {
+        
+        font-size: 0.8em;
+    }
+    body #wrapper>section article header h1
+    {
+        font-size: 1.8em;
+    }
+    body #wrapper>footer h2
+    {
+        font-size: 1.5em;
+
+    }
+    body #wrapper>section article>div p
+    {
+        font-size: 1.2em;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 960px)
+{
+    body #wrapper > header h1 a
+    {
+        font-size: 1.1em;
+    }
+    body #wrapper>header h1 a img
+    {
+        height: 90px;
+    }
+    body #wrapper>header > nav > ul >li
+    {
+        
+        font-size: 1.6em;
+    }
+    body #wrapper>header > nav > ul >li>ul>li
+    {
+        
+        font-size: 0.8em;
+    }
+    body #wrapper>section article header h1
+    {
+        font-size: 1.7em;
+    }
+    body #wrapper>footer h2
+    {
+        font-size: 1.6em;
+
+    }
+    body #wrapper>section article>div p
+    {
+        font-size: 1.1em;
+    }
+    
+}
+
+@media only screen and (max-width: 960px) and (min-width: 780px)
+{
+    body #wrapper > header h1 a
+    {
+        font-size: 1em;
+    }
+    body #wrapper>header h1 a img
+    {
+        height: 80px;
+    }
+    body #wrapper>header > nav > ul >li
+    {
+        
+        font-size: 1.6em;
+    }
+    body #wrapper>header > nav > ul >li>ul>li
+    {
+        
+        font-size: 0.8em;
+    }
+    body #wrapper>section article header h1
+    {
+        font-size: 1.6em;
+    }
+    body #wrapper>footer h2
+    {
+        font-size: 1.5em;
+
+    }
+    body #wrapper>section article>div p
+    {
+        font-size: 1em;
+    }
+    body #wrapper>aside div.social
+    {
+        font-size: 0.9em;
+    }
+}   
+
+@media only screen and (max-width: 780px)
+{
+
+    body #wrapper > header h1 a
+    {
+        font-size: 0.9em;
+    }
+    body #wrapper>header h1 a img
+    {
+        height: 70px;
+    }
+    body #wrapper > header
+    {
+        border: none;
+        margin-bottom: 0px;
+    }
+
+    body #wrapper > header nav
+    {
+        float: none;
+        text-align: center;
+    }
+
+    body #wrapper>header nav ul li
+    {
+        
+        font-size: 1.4em;
+    }
+    body #wrapper>section article header h1
+    {
+        font-size: 1.4em;
+    }
+    body #wrapper>footer h2
+    {
+        font-size: 1.6em;
+
+    }
+    body #wrapper>section article>div p
+    {
+        font-size: 0.9em;
+    }
+    body #wrapper>aside div.social ul li
+    {
+        display: inline-block;
+    }
+    body #wrapper>aside div.social ul li span
+    {
+        display: none;
+    }
+    body #wrapper>aside div.social ul li img
+    {
+        height: 40px;
+    }
+    body #wrapper > header nav ul li ul li
+    {
+        z-index: 999;
+    }
+    body #wrapper>header nav ul li
+    {
+        margin: 2px;
+    }
+}
+
+@media only screen and (max-width: 640px)
+{
+    body #wrapper>aside 
+    {
+        display: none;
+    }
+    body #wrapper>section 
+    {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px)
+{
+        body #wrapper > header h1 a
+    {
+        font-size: 0.7em;
+    }
+
+    body #wrapper>header nav ul li a
+    {
+        width: 250px;
+    }
+
+    body #wrapper>header nav ul li ul li 
+    {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 320px)
+{
+  
+    body #wrapper > header h1 a
+    {
+        font-size: 0.6em;
+    }
+    body #wrapper>header h1 a img
+    {
+        height: 50px;
+    }
+}
