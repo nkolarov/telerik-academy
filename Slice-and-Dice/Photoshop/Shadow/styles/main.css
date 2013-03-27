@@ -1,0 +1,17 @@
+﻿body {
+    background-color: #ffffff;
+}
+
+.backgroundimg {
+    float: left;
+    margin: 30px 0 0 40px;
+    background: url("../images/border_png24.png") no-repeat right bottom;
+}
+
+    .backgroundimg img {
+        display: block;
+        position: relative;
+
+        margin: -8px 7px 8px -9px;
+        padding: 0px;
+    }
