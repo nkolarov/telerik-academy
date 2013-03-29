@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Using Objects</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            06. Write a function that groups an array of persons by age, first or last name.<br />
+            The function must return an associative array, with keys - the groups, and values -arrays with persons in this groups.<br />
+            Use function overloading (i.e. just one function).<br />
+        </h3>
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            var persons = [
+                {
+                    firstName: "Ivan", 
+                    lastName: "Ivanov",
+                    age: 32
+                }, {
+                    firstName: "Ivan",
+                    lastName: "Petrov",
+                    age: 81
+                }, {
+                    firstName: "Stoian",
+                    lastName: "Ivanov",
+                    age: 113
+                }, {
+                    firstName: "Petar",
+                    lastName: "Dimitrov",
+                    age: 32
+                }
+            ];
+
+            function HasKey(obj, key) {
+                // Walk through object`s properties.
+                for (var prop in obj) {
+                    if (prop == key) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            
+            function GroupBy(arr, prop) {
+                var result = {};
+                var key;
+
+                // Beautify person printing
+                result.print = function () {
+
+                    // Walk through keys
+                    for (var obj in result) {
+
+                        // Print is must not be printed
+                        if (obj == "print") {continue;}
+
+                        jsConsole.writeLine("Key: " + obj);
+                        jsConsole.writeLine("Persons:");
+
+                        // Walk through persons in current key
+                        for (var person in result[obj]) {
+                            var currPerson = result[obj][person];
+                            jsConsole.writeLine("FirstName: " + currPerson.firstName + "; LastName: " + currPerson.lastName + "; Age: " + currPerson.age);
+                        }
+                    }
+                }
+                
+                switch (prop) {
+                    case "firstName":
+                    case "lastName":
+                    case "age":
+                        for (var person in persons) {
+
+                            key = arr[person][prop];
+
+                            
+                            if (HasKey(result, arr[person][prop])) {
+
+                                // Push person into value
+                                result[key].push(arr[person]);
+                            }
+                            else {
+
+                                // Initialize key and push person
+                                result[key] = [];
+                                result[key].push(arr[person]);
+                            }
+                        }
+                        break;
+                    default:
+                        jsConsole.writeLine("Error! You must not enter here!");
+                }
+            
+                return result;
+            }
+            
+            // Test Grouping
+            var people = GroupBy(persons, "firstName");
+            jsConsole.writeLine("Group by First Name:");
+            people.print();
+            jsConsole.writeLine("");
+            
+            people = GroupBy(persons, "lastName");
+            jsConsole.writeLine("Group by Last Name:");
+            people.print();
+            jsConsole.writeLine("");
+            
+            people = GroupBy(persons, "age");
+            jsConsole.writeLine("Group by Age:");
+            people.print();
+            var a = 3;
+            
+       
+        </script>
+    </body>
+</html>

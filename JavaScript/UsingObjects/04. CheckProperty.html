@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Using Objects</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            04. Write a function that checks if a given object contains a given property.<br />
+            var obj  = …; <br />
+            var hasProp = hasProperty(obj,"length"); <br />
+
+        </h3>
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            var pesho = {
+                name: "Pesho",
+                age: 23
+            }
+
+            function CheckProperty(obj, propName) {
+
+                // Walk through object`s properties.
+                for (var prop in obj) {
+                    if (prop == propName) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            if (CheckProperty(pesho, "name") == true) {
+                jsConsole.writeLine("YES! Property exists!");
+            } else {
+                jsConsole.writeLine("OH NO! Property does NOT exists!");
+            }
+
+        </script>
+    </body>
+</html>

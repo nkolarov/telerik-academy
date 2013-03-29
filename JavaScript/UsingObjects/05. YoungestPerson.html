@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Using Objects</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            05. Write a function that finds the youngest person in a given array of persons and prints his/hers full name.<br />
+            Each person have properties firstname, lastname and age, as shown:
+            var persons = {
+            {firstname : "Gosho", lastname: "Petrov", age: 32},
+            {firstname : "Bay", lastname: "Ivan", age: 81},…};
+        </h3>
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            var persons = [
+                {
+                    firstName: "Pesho", 
+                    lastName: "Petrov",
+                    age: 32
+                }, {
+                    firstName: "Bay",
+                    lastName: "Ivan",
+                    age: 81
+                }, {
+                    firstName: "Gosho",
+                    lastName: "Goshov",
+                    age: 113
+                }, {
+                    firstName: "Bay",
+                    lastName: "Miro",
+                    age: 132
+                }
+            ];
+            
+            function FindYoungest(arr) {
+
+                var minAge = Number.MAX_VALUE;
+                var youngest = {};
+                // Walk through objects.
+                for (var i = 0; i < arr.length; i++) {
+
+                    // Walk through object`s properties.
+                    for (var prop in arr[i]) {
+                        if (prop == "age") {
+                            if (arr[i].age < minAge) {
+                                minAge = arr[i].prop;
+                                youngest = arr[i];
+                            }
+                        }
+                    }
+                    return youngest;
+                }
+            }
+            
+            var youngest = FindYoungest(persons);
+            jsConsole.writeLine("Youngest person is: " + youngest.firstName + "; Age: " + youngest.age);            
+        </script>
+    </body>
+</html>

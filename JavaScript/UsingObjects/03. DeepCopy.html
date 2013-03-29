@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Using Objects</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            03. Write a function that makes a deep copy of an object.<br />
+            The function should work for both primitive and reference types.<br />
+        </h3>
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function Clone(obj) {
+                // Initialize new object
+                var result;
+
+                if (obj instanceof Array) {
+                    result = [];
+                }
+                else {
+                    result = {};
+                }
+
+                for (var i in obj) {
+
+                    // If is object Clone again
+                    if (obj[i] && typeof obj[i] == "object") {
+                        result[i] = Clone(obj[i]);
+                    }
+                    else {
+                        result[i] = obj[i];
+                    }
+                }
+                return result;
+            }
+
+            var pesho = {
+                a: 5,
+                b: 6,
+                c: [1, 2, 3],
+                d: { a: 1, b: 2 }
+            }
+
+            var vanio = Clone(pesho);
+
+            // Edit some data
+            vanio.c = [7, 8, 9];
+            vanio.d = { a: 8, x: 9 };
+
+            // Check pesho`s data
+            jsConsole.writeLine(pesho.c.join(', '));
+            jsConsole.writeLine(pesho.d.b);
+
+        </script>
+    </body>
+</html>
