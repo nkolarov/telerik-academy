@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>ConditionalStatements</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            06. Write a script that enters the coefficients a, b and c of a quadratic equation. <br />a*x^2 + b*x + c = 0 <br />and calculates and prints its real roots. Note that quadratic equations may have 0, 1 or 2 real roots.
+        </h3>
+        <input type="text" id="a" placeholder="Enter a"/>
+        <input type="text" id="b" placeholder="Enter b"/>
+        <input type="text" id="c" placeholder="Enter c"/>
+        <button onclick="Solve()">Solve!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function Solve() {
+                //Read numbers
+                var a = jsConsole.readInteger("#a");
+                var b = jsConsole.readInteger("#b");
+                var c = jsConsole.readInteger("#c");
+                
+                //Calculate and Print Result
+                var d = (b * b) - (4 * a * c);
+
+                //Practise if else and create some logic ... 
+                if (a == 0) {
+                    jsConsole.writeLine("x = " + (-(c / b)));
+                }
+                else if (b == 0 && c < 0) {
+                    jsConsole.writeLine("x1 = " + Math.sqrt(-(c / a)) + "; x2 = -" + Math.sqrt(-(c / a)));
+                }
+                else if (c == 0) {
+                    jsConsole.writeLine("x1 = 0; x2 = " + (-b / a));
+                }
+                else if (d < 0) {
+                    jsConsole.writeLine("No real roots!");
+                }
+                else if (d == 0) {
+                    jsConsole.writeLine("x = " + (-b / (2 * a)));
+                }
+                else if (d > 0) {
+                    jsConsole.writeLine("x1 = " + (((-b) + Math.sqrt(d)) / 2 * a) + "; x2 = " + (((-b) - Math.sqrt(d)) / 2 * a));
+                }
+            }
+        </script>
+    </body>
+</html>

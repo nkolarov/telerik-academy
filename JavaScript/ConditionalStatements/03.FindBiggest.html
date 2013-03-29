@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>ConditionalStatements</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>03. Write a script that finds the biggest of three integers using nested if statements.</h3>
+        <input type="text" id="first" placeholder="Enter first number"/>
+        <input type="text" id="second" placeholder="Enter second number"/>
+        <input type="text" id="third" placeholder="Enter third number"/>
+        <button onclick="FindBiggest()">FindBiggest!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function FindBiggest() {
+                //Read numbers
+                var first = jsConsole.readInteger("#first");
+                var second = jsConsole.readInteger("#second");
+                var third = jsConsole.readInteger("#third");
+                var biggest = first;
+                
+                //Check second number 
+                if (biggest < second) {
+                    biggest = second;
+
+                    //Check third number 
+                    if (biggest < third) {
+                        biggest = third;
+                    }
+                }
+           
+                //Print result
+                jsConsole.writeLine("Biggest: " + biggest);
+            }
+        </script>
+    </body>
+</html>

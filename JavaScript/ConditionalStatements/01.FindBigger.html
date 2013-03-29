@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>ConditionalStatements</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>01. Write an if statement that examines two integer variables and exchanges their values if the first one is greater than the second one.</h3>
+        <input type="text" id="first" placeholder="Enter first number"/>
+        <input type="text" id="second" placeholder="Enter second number"/>
+        <button onclick="FindBigger()">FindBigger!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function FindBigger() {
+                //Read number
+                var first = jsConsole.readInteger("#first");
+                var second = jsConsole.readInteger("#second");
+                var bigger = first;
+
+                if (first == second) {
+                    //Check if numbers are equal
+                    jsConsole.writeLine("Numbers are equal!");
+                    return;
+                }
+                else if (first < second) {
+                    //If second is greater
+                    bigger = second;
+                }
+            
+                //Print result
+                jsConsole.writeLine("Bigger: " + bigger);
+            }
+        </script>
+    </body>
+</html>

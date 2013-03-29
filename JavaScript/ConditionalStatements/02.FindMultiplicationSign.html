@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>ConditionalStatements</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>02. Write a script that shows the sign (+ or -) of the product of three real numbers without calculating it. Use a sequence of if statements.</h3>
+        <input type="text" id="first" placeholder="Enter first number"/>
+        <input type="text" id="second" placeholder="Enter second number"/>
+        <input type="text" id="third" placeholder="Enter third number"/>
+        <button onclick="FindSign()">FindSign!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function FindSign() {
+                //Read number
+                var first = jsConsole.readInteger("#first");
+                var second = jsConsole.readInteger("#second");
+                var third = jsConsole.readInteger("#third");
+                var sign = "+";
+                
+                //Check first number 
+                if (first < 0) {
+                    sign = "-";
+                }
+
+                //Check second number 
+                if (second < 0) {
+                    if (sign == "-") {
+                        sign = "+";
+                    }
+                    else {
+                        sign = "-";
+                    }
+                }
+
+                //Check third number 
+                if (third < 0) {
+                    if (sign == "-") {
+                        sign = "+";
+                    }
+                    else {
+                        sign = "-";
+                    }
+                }
+
+                //Print result
+                jsConsole.writeLine("Sign: " + sign);
+            }
+        </script>
+    </body>
+</html>

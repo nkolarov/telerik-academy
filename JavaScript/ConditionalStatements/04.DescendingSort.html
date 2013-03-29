@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>ConditionalStatements</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>04. Sort 3 real values in descending order using nested if statements.</h3>
+        <input type="text" id="first" placeholder="Enter first number"/>
+        <input type="text" id="second" placeholder="Enter second number"/>
+        <input type="text" id="third" placeholder="Enter third number"/>
+        <button onclick="Sort()">Sort!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function Sort() {
+                //Read numbers
+                var first = jsConsole.readInteger("#first");
+                var second = jsConsole.readInteger("#second");
+                var third = jsConsole.readInteger("#third");
+
+                //Stupid logic with nested ifs ... I have to nest them and repeat code...
+
+                if (second > first) {
+                    //Swap first and second
+                    temp = first;
+                    first = second;
+                    second = temp;
+                    if (third > second) {
+                        //Swap third and second
+                        temp = second;
+                        second = third;
+                        third = temp;
+                        if (second > first) {
+                            //Swap first and second
+                            temp = first;
+                            first = second;
+                            second = temp;
+                        }
+                    }
+                }
+                else if (third > second) {
+                    //Swap third and second
+                    temp = second;
+                    second = third;
+                    third = temp;
+                    if (second > first) {
+                        //Swap first and second
+                        temp = first;
+                        first = second;
+                        second = temp;
+                    }
+                }
+            
+                //Print result
+                jsConsole.writeLine(first + " > " + second + " > "+third);
+            }
+        </script>
+    </body>
+</html>

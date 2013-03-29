@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>ConditionalStatements</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            08. Write a script that converts a number in the range [0...999] to a text corresponding to its English pronunciation. Examples: <br />0 -> "Zero" <br />273 -> "Two hundred seventy three" <br />400 -> "Four hundred" <br />501 -> "Five hundred and one" <br />711 -> "Seven hundred and eleven"
+            .
+        </h3>
+        <input type="text" id="number" placeholder="Enter a number [0,999]"/>
+        <button onclick="GetText()">GetText!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function GetText() {
+                //Read number
+                var number = jsConsole.readInteger("#number");
+                var result = "";
+
+                if (number < 0 || number > 999) {
+                    jsConsole.writeLine("Error! Number must be in range [0,999]!")
+                }
+
+                if (number == 0) {
+                    jsConsole.writeLine(number + " -> Zero");
+                    return;
+                }
+
+                //Pronounciation arrays
+                var beforeTen = new Array("", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten");
+                var afterTen = new Array("ten", "eleven", "tweleve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen");
+                var hundreeds = new Array("", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety");
+                
+                //Begun calculations
+                //Get hundreeds
+                if (parseInt(number / 100) > 0) {
+                    result += beforeTen[parseInt(number / 100)] + " hundred ";
+                }
+
+                //Get tens and units 20+
+                if (parseInt(number % 100) > 19) {
+                    //tens
+                    result += hundreeds[parseInt(parseInt(number % 100) / 10)] + " ";
+                    //units
+                    result += beforeTen[parseInt(parseInt(number % 100) % 10)] + " ";
+                }
+
+                //Greter than 100 and less than 20. Resolved AND problem
+                else if (parseInt(number % 100) > 9 && parseInt(number / 100) > 0) {
+                    //tens
+                    result += " and " + afterTen[parseInt(parseInt(number % 100) % 10)] + " ";
+                }
+                else if (parseInt(number % 100) > 0 && parseInt(number / 100) > 0) {
+                    //units
+                    result += " and " + beforeTen[parseInt(parseInt(number % 100) % 10)] + " ";
+                }
+
+                //Less than 100 without AND
+                else if (parseInt(number % 100) > 9) {
+                    //tens
+                    result += afterTen[parseInt(parseInt(number % 100) % 10)] + " ";
+                }
+                else if (parseInt(number % 100) > 0) {
+                    //units
+                    result += beforeTen[parseInt(parseInt(number % 100) % 10)] + " ";
+                }
+            
+                //Print result
+                //Capitalise first letter 
+                jsConsole.writeLine(number + " -> " + result.charAt(0).toUpperCase() + result.slice(1));
+            }
+        </script>
+    </body>
+</html>
