@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Loops</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>04. Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects.</h3>
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function FindMinAndMax(obj) {
+                //Define min and max
+                var min = "z";
+                var max = "a";
+
+                //Walk through properties
+                for (var prop in obj) {
+                    //Find max
+                    if (prop > max) {
+                        max = prop;
+                    }
+                    //Find min
+                    if (prop < min) {
+                        min = prop;
+                    }
+                }
+
+                //Print and beautify result:
+                jsConsole.writeLine("Object: " + obj);
+                jsConsole.writeLine("Min: " + min);
+                jsConsole.writeLine("Max: " + max);
+                jsConsole.writeLine();
+            }
+
+            //Call function for desired objects
+            FindMinAndMax(document);
+            FindMinAndMax(window);
+            FindMinAndMax(navigator);
+        </script>
+    </body>
+</html>

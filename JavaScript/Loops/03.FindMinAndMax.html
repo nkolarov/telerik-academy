@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Loops</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>03. Write a script that finds the max and min number from a sequence of numbers.</h3>
+        <h4>Sample input: 1,-2,3,4,5,100,-500</h4>
+        <textarea id="sequence" placeholder="Enter comma separated sequence!"></textarea>
+        <br />
+        <button href="#" onclick="FindMinAndMax()">FindMinAndMax!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function FindMinAndMax() {
+                //Read number
+                var sequence = jsConsole.read("#sequence");
+                var numbers = sequence.split(",");
+                var max = Number.MIN_VALUE;
+                var min = Number.MAX_VALUE;
+                var curr;
+
+                //Walk through array
+                for (var i = 0; i < numbers.length; i++) {
+                    //Find max
+                    curr = parseInt(numbers[i]);
+
+                    if (curr > max) {
+                        max = curr;
+                    }
+                    //Find min
+                    if (curr < min) {
+
+                        min = curr;
+                    }
+                }
+
+                //Print result
+                jsConsole.writeLine("Min: " + min + "; Max: " + max);
+            }
+        </script>
+    </body>
+</html>

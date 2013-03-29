@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Loops</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>01. Write a script that prints all the numbers from 1 to N.</h3>
+        <input type="text" id="inputNumber" placeholder="Enter N!"/>
+        <button href="#" onclick="Print()">Check!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function Print() {
+                //Read number
+                var number = jsConsole.readInteger("#inputNumber");
+
+                //Check input
+                if (number < 0) {
+                    jsConsole.writeLine("Error! N must be positive!");
+                }
+                //Print result
+                for (var i = 0; i < number; i++) {
+                    jsConsole.writeLine(i+1);
+                }
+                
+            }
+        </script>
+    </body>
+</html>
