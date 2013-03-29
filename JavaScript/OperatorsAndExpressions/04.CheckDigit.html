@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>OperatorsAndExpressions</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>04. Write an expression that checks for given integer if its third digit (right-to-left) is 7. E. g. 1732 -> true.</h3>
+        <input type="text" id="inputNumber" placeholder="Enter a number"/>
+        <button onclick="CheckDigit()">Check!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function CheckDigit() {
+                //Read number
+                var number = jsConsole.readInteger("#inputNumber");
+                //Calculate and print result
+                jsConsole.writeLine("The thirdth digit of " + number + " " + (parseInt((number / 100) % 10) == 7 ? "IS" : "IS NOT") + " seven!");
+                jsConsole.writeLine(parseInt((number / 100) % 10) == 7);
+            }
+        </script>
+    </body>
+</html>

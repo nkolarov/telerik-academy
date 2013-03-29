@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>OperatorsAndExpressions</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>05. Write a boolean expression for finding if the bit 3 (counting from 0) of a given integer is 1 or 0.</h3>
+        <input type="text" id="inputNumber" placeholder="Enter a number"/>
+        <button onclick="CheckBit()">Check!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function CheckBit() {
+                //Read number
+                var number = jsConsole.readInteger("#inputNumber");
+                var mask = 8;//1000
+                //Calculate and print result
+                jsConsole.writeLine("The thirdth bit of " + number + " " + ((parseInt(mask & number)) == 8 ? "IS" : "IS NOT") + " one!");
+            }
+        </script>
+    </body>
+</html>

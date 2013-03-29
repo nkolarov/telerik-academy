@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>OperatorsAndExpressions</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>02. Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.</h3>
+        <input type="text" id="inputNumber" placeholder="Enter a number"/>
+        <button onclick="CheckDivision()">Check!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function CheckDivision() {
+                //Read number
+                var number = jsConsole.readInteger("#inputNumber");
+                //Calculate and print result
+                jsConsole.writeLine("The number " + number + " " + (number % 35 == 0?"CAN":"CANNOT") + " be divided by 7 and 5 in the same time!");
+            }
+        </script>
+    </body>
+</html>

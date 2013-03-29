@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>OperatorsAndExpressions</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>08. Write an expression that calculates trapezoid's area by given sides a and b and height h.</h3>
+        <input type="text" id="a" placeholder="Enter a"/>
+        <input type="text" id="b" placeholder="Enter b"/>
+        <input type="text" id="h" placeholder="Enter h"/>
+        <button onclick="CalculateRectangleArea()">CalculateArea!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function CalculateRectangleArea() {
+                //Read number
+                var a = jsConsole.readInteger("#a");
+                var b = jsConsole.readInteger("#b");
+                var h = jsConsole.readInteger("#h");
+                //Calculate and print result
+                jsConsole.writeLine("Area =  " + (a + b) / 2 * h);
+            }
+        </script>
+    </body>
+</html>
