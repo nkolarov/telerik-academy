@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Functions</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <h3>05. Write a function that counts how many times given number appears in given array. Write a test function to check if the function is working correctly.</h3>
+    <br />
+    <br />
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function NumberCount(inputArray, number) {
+            var arr = inputArray || [];
+            var number = number;
+            var counter = 0;
+
+            // Walk throug elements and count
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] ===number ) {
+                    counter++;
+                }
+            }
+
+            return counter;
+        }
+
+        function TestNumberCount() {
+
+            // Predefined values
+            var testArray = [1, 2, 3, 4, 1, 2, 3];
+            var searchedNumber = 1;
+            var expectedResult = 2;
+
+            if (NumberCount(testArray, searchedNumber) == expectedResult) {
+                return "Function NumberCount works fine!";
+            } else {
+                return "Function NumberCount does NOT works fine!";
+            }
+            
+        }
+        
+        // Try
+        var testArray = [1, 2, 3, 4, 1, 2, 3];
+        var number = 1;
+        jsConsole.writeLine("Array: "+testArray.join(', '));
+        jsConsole.writeLine("Searched number: "+ number);
+        jsConsole.writeLine("Counter: "+NumberCount(testArray, number));
+
+        // Test 
+        jsConsole.writeLine("Test result: " + TestNumberCount());
+
+    </script>
+</body>
+</html>

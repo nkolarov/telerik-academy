@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Functions</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>01. Write a function that returns the last digit of given integer as an English word. Examples: 512 -> "two", 1024 -> "four", 12309 -> "nine"</h3>
+        <input type="text" id="inputNumber" placeholder="Enter Number!"/>
+        <button href="#" onclick="Print()">Check!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function GetLastNumber(number) {
+                switch (number[number.length - 1]) {
+                    case "0":
+                        return "zero";
+                        break;
+                    case "1":
+                        return "one";
+                        break;
+                    case "2":
+                        return "two";
+                        break;
+                    case "3":
+                        return "three";
+                        break;
+                    case "4":
+                        return "four";
+                        break;
+                    case "5":
+                        return "five";
+                        break;
+                    case "6":
+                        return "six";
+                        break;
+                    case "7":
+                        return "seven";
+                        break;
+                    case "8":
+                        return "eight";
+                        break;
+                    case "9":
+                        return "nine";
+                        break;
+                }
+                //Print result
+            }
+            function Print() {
+                //Read number
+                var number = jsConsole.read("#inputNumber");
+                jsConsole.writeLine(GetLastNumber(number));
+            }
+        </script>
+    </body>
+</html>

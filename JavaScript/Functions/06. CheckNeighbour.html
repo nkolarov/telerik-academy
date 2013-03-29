@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Functions</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>06.Write a function that checks if the element at given position in given array of integers is bigger than its two neighbors (when such exist).</h3>
+        <br />
+        <br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function CheckNeighbours(inputArray, index) {
+                // Parse input
+                var arr = inputArray || [];
+                var index = index;
+                
+                // Check input
+                if (arr.length < 2 || index <= 0 || arr.length < index || index > (arr.length - 2)) {
+                    return;
+                }
+
+                var prev = parseInt(arr[index - 1]);
+                var next = parseInt(arr[index + 1]);
+                var element = parseInt(arr[index]);
+
+                if (element > prev && element > next) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+
+            // Test
+
+            var testArray = [1, 2, 3, 4, 5, 6, 7, 6];
+
+            jsConsole.writeLine("Array: " + testArray.join(', '));
+
+
+            for (var i = 0; i < testArray.length; i++) {
+                jsConsole.writeLine("Check element at index: " + i);
+
+                var compare = CheckNeighbours(testArray, i);
+
+                switch (compare) {
+                    case true:
+                        jsConsole.writeLine("Element at position " + i + " is bigger than it`s neighbours.");
+                        break;
+                    case false:
+                        jsConsole.writeLine("Element at position " + i + " is NOT bigger than it`s neighbours.");
+                        break;
+                    default:
+                        jsConsole.writeLine("Don`t mess with me!")
+                }
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Functions</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>07. Write a Function that returns the index of the first element in array that is bigger than its neighbors, or -1, if there’s no such element.
+            Use the function from the previous exercise. </h3>
+        <br />
+        <br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function CheckNeighbours(inputArray, index) {
+                // Parse input
+                var arr = inputArray || [];
+                var index = index;
+                
+                // Check input
+                if (arr.length < 2 || index <= 0 || arr.length < index || index > (arr.length - 2)) {
+                    return;
+                }
+
+                var prev = parseInt(arr[index - 1]);
+                var next = parseInt(arr[index + 1]);
+                var element = parseInt(arr[index]);
+
+                if (element > prev && element > next) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+
+            function FindFirstBigger(arr) {
+                for (var i = 0; i < arr.length; i++) {
+                    var compare = CheckNeighbours(arr, i);
+                    if (compare === true) {
+                        return i;
+                        break;
+                    }
+                }
+            
+                return -1;
+            }
+            
+            // Test
+            
+            var testArray = [1, 2, 1, 4, 5, 6, 7, 6];
+            
+            jsConsole.writeLine("Array: " + testArray.join(', '));
+            var element = FindFirstBigger(testArray);
+            
+            if (element == -1) {
+                jsConsole.writeLine("Element not found!");
+            }
+            else {
+                jsConsole.writeLine("Element at position " + element + " is the first bigger than it`s neighbours.");
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Functions</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <h3>03. Write a function that finds all the occurrences of word in a text
+            - The search can case sensitive or case insensitive
+            - Use function overloading
+    </h3>
+    <input type="text" id="inputText" placeholder="Enter Text!" value="bubu e bu bu"/>
+    <input type="text" id="searchString" placeholder="Enter Search String!" value="Bu"/>
+    <button href="#" onclick="Search(true)">Case sensitive !</button>
+    <button href="#" onclick="Search()">Case insensitive !</button>
+    <br />
+    <br />
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function Search(caseSensitive) {
+
+            // Read text
+            var number = jsConsole.read("#inputText");
+            var searchString = jsConsole.read("#searchString");
+            var counter = 0;
+            var index = 0;
+
+            // Check input
+
+            var caseSensitive = caseSensitive || false;
+            if (!caseSensitive) {
+                searchString = searchString.toLowerCase();
+                number = number.toLowerCase();
+            }
+
+            while (index < number.length) {
+                index = number.indexOf(searchString, index);
+                if (index != -1) {
+                    index = index + searchString.length;
+                    counter++;
+                } else {
+                    break;
+                }
+            }
+            jsConsole.writeLine(counter);
+        }
+    </script>
+</body>
+</html>
