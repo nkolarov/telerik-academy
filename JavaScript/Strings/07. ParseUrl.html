@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Strings</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            07. Write a script that parses an URL address given in the format:<br />
+            [protocol]://[server]/[resource]<br />
+            and extracts from it the [protocol], [server] and [resource] elements. <br />
+            Return the elements in a JSON object.For example from the URL http://www.devbg.org/forum/index.php the following information should be extracted:<br />
+            {protocol: "http", server: "www.devbg.org", resource: "/forum/index.php"}
+
+        </h3>
+        <br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            // Hardcode input
+            var inputString = "http://www.devbg.org/forum/index.php";
+
+            function ParseUrl(str) {
+                var url = str;
+                var protocol, server, resource;
+
+                // Get protocol
+                var protocolEnd = url.indexOf("://");
+                if (protocolEnd != -1) {
+                    protocol = url.substring(0, protocolEnd);
+                    url = url.substring(protocolEnd + 3);
+                }
+                else {
+                    protocol = "NOT FOUND!";
+                }
+
+                // Get server
+                var serverEnd = url.indexOf("/");
+                if (serverEnd != -1) {
+                    server = url.substring(0, serverEnd);
+                    url = url.substring(serverEnd);
+                }
+                else {
+                    // Server cannot be missing!!! Resource cannot be alone! 
+                    server = url;
+                    resource = "NOT DOUND!";
+                    url = String.Empty;
+                }
+
+                // Get resource
+                if (url && url.length > 0) {
+                    resource = url;
+                }
+                else {
+                    resource = "NOT FOUND!";
+                }
+
+                return {
+                    protocol: protocol,
+                    server: server,
+                    resource: resource
+
+                }
+            }
+
+            // Another way.
+            function SmartUrlParser(str) {
+                var uri = document.createElement('a');
+                uri.href = str;
+            
+                return {
+                    protocol: uri.protocol,
+                    server: uri.hostname,
+                    resource: uri.pathname,
+                };
+            }
+            
+            // Print result
+            var result = ParseUrl(inputString);
+            for (var prop in result) {
+                jsConsole.writeLine(prop + ": " + result[prop]);
+            }
+
+            //var anotherResult = SmartUrlParser(inputString);
+            //for (var prop in anotherResult) {
+            //    jsConsole.writeLine(prop + ": " + result[prop]);
+            //}
+
+        </script>
+    </body>
+</html>

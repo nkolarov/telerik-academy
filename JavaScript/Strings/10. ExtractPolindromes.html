@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Strings</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            10. Write a program that extracts from a given text all palindromes, e.g. "ABBA", "lamal", "exe".
+        </h3>
+        <br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+       
+            // Hardcode input
+            var inputString = "Write a program that extracts from a given text all palindromes, e.g. ABBA, lamal, exe.";
+
+            ExtractPolindromes(inputString);
+
+            function ExtractPolindromes(str) {
+                var words = [];
+
+                // Clear all points
+                str = str.split('.').join(' ');
+
+                // Clear all commas and split by space
+                words = str.replace(/,/g, " ").split(" ");
+
+                for (var i = 0; i < words.length; i++) {
+                    var word = words[i];
+                    var isPalindrome = true;
+
+                    // Single letter bug
+                    if (word.length <= 1) {
+                        continue;
+                    }
+
+                    //Check
+                    for (var j = 0; j < parseInt((word.length / 2)) ; j++) {
+                        if (word[j] != word[word.length - j - 1]) {
+                            isPalindrome = false;
+                            break;
+                        }
+                    }
+
+                    //Print Palindromes
+                    if (isPalindrome == true) {
+                        jsConsole.writeLine(word);
+                    }
+                }
+                // Print result
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Strings</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            12.Write a function that creates a HTML UL using a template for every HTML LI.<br />
+            The source of the list should an array of elements. Replace all placeholders marked with –{…}–<br />
+            with the value of the corresponding property of the object.<br />
+            Example:<br />
+            &lt;div data-type=&quot;template&quot; id=&quot;list-item&quot;&gt;<br/>
+            &lt;strong&gt;-{name}-&lt;/strong&gt; &lt;span&gt;-{age}-&lt;/span&gt;<br/>&lt;/div&gt;<br/>
+            Result: <br />
+            var people = [{name: &quot;Peter&quot;, age: 14},&#x2026;];<br/>
+            var tmpl = document.getElementById(&quot;list-item&quot;).innerHtml;<br/>
+            var peopleList = generateList(people,template);<br/>
+            //peopleList = &quot;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Peter&lt;/strong&gt; &lt;span&gt;14&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&#x2026;&lt;/li&gt;&#x2026;&lt;/ul&gt;&quot;
+        </h3>
+        <br />
+        <hr />
+        <div data-type="template" id="list-item">
+            <strong>-{name}-</strong> <span>-{age}-</span>
+        </div>
+        <script>
+
+            // Initialize
+            var people = [{ name: "Peter", age: 14 }, { name: "Pesho", age: 21 }, { name: "Vanio", age: 17 }, { name: "Gosho", age: 20 }];
+            var peopleDivList = document.getElementById("list-item");
+            var template = peopleDivList.innerHTML;
+
+            // Populate list
+            var peopleList = Populate(people, template);
+            
+            peopleDivList.innerHTML = peopleList;
+
+            function Populate(people, template) {
+                var result = [];
+            
+                result.push("<ul>");
+            
+                // Actual population
+                for (var i = 0; i < people.length; i++) {
+                    var currentListElement = template;
+                    result.push("<li>");
+                    
+                    currentListElement = currentListElement.replace(new RegExp('\\{name\\}', "g"), people[i]["name"]);
+                    currentListElement = currentListElement.replace(new RegExp('\\{age\\}', "g"), people[i]["age"]);
+            
+                    result.push(currentListElement);
+                    result.push("</li>");
+                }
+            
+                result.push("</ul>");
+            
+                return result.join('');
+            }
+        </script>
+    </body>
+</html>

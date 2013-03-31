@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Strings</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            01. Write a JavaScript function reverses string and returns itExample: "sample" -> "elpmas".
+        </h3>
+        <input type="text" id="inputString" placeholder="Enter a string" value="sample"/>
+        <button onclick="Initialize()">Reverse!</button>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+
+            function Initialize() {
+                var str = jsConsole.read("#inputString");
+            
+                //Beautify result
+                jsConsole.write(str + " -> ");
+                jsConsole.writeLine(ReverseString(str));
+            }
+            
+            function ReverseString(inputString) {
+                // Initialize result. We use array as optimization. Concatenation is slow.
+                var result = [];
+            
+                for (var i = inputString.length - 1; i >= 0; i--) {
+                    result.push(inputString[i]);
+                }
+            
+                return result.join('');
+            }
+        </script>
+    </body>
+</html>
+    
+    

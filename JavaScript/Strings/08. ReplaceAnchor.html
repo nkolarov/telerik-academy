@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Strings</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            08. Write a JavaScript function that replaces in a HTML document given as string all the tags &lt;a href=&quot;&#x2026;&quot;&gt;&#x2026;&lt;/a&gt; with corresponding tags [URL=&#x2026;]&#x2026;/URL]. <br/>
+            Sample HTML fragment:<br/>
+            &lt;p&gt;Please visit &lt;a href=&quot;http://academy.telerik. com&quot;&gt;our site&lt;/a&gt; to choose a training course. <br />
+            Also visit &lt;a href=&quot;www.devbg.org&quot;&gt;our forum&lt;/a&gt; to discuss the courses.&lt;/p&gt;<br/>
+            Result:<br/>
+            &lt;p&gt;Please visit [URL=http://academy.telerik. com]our site[/URL] to choose a training course. <br />
+            Also visit [URL=www.devbg.org]our forum[/URL] to discuss the courses.&lt;/p&gt;
+
+        </h3>
+        <br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+       
+            // Hardcode input
+            var inputString = '<p>Please visit <a href="http://academy.telerik. com">our site</a> to choose a training course. Also visit <a href="www.devbg.org">our forum</a> to discuss the courses.</p>';
+
+            function ReplaceUrl(str) {
+                var result = str;
+
+                // Replace all with /g
+                result = result.replace(/<a href=\"/g, "[URL=");
+                result = result.replace(/<\/a>"/g, "[/URL]");
+                result = result.replace(/\">/g, "]");
+
+                return result;
+            }
+
+            // Print result
+            jsConsole.writeLine(ReplaceUrl(inputString));
+        </script>
+    </body>
+</html>

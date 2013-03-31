@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Strings</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            04. You are given a text. Write a function that changes the text in all regions:<br/>
+            &lt;upcase&gt;text&lt;/upcase&gt; to uppercase.<br/>
+            &lt;lowcase&gt;text&lt;/lowcase&gt; to lowercase.<br/>
+            &lt;mixcase&gt;text&lt;/mixcase&gt; to mix casing(random)<br />
+            INPUT:<br />
+            We are &lt;mixcase&gt;living&lt;/mixcase&gt; in a &lt;upcase&gt;yellow submarine&lt;/upcase&gt;. We &lt;mixcase&gt;don't&lt;/mixcase&gt; have &lt;lowcase&gt;anything&lt;/lowcase&gt; else. <br />
+            The expected result:<br />
+            We are LiVinG in a YELLOW SUBMARINE. We dOn'T have anything else.<br />
+            Regions can be nested
+
+        </h3>
+        <br /><br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            // Hardcode input
+            var inputString = "We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>. We <mixcase>don't</mixcase> have <lowcase>anything</lowcase> else.";
+
+            // Nesting also works! Just uncomment:
+            // inputString = "We are <mixcase>living <upcase>yellow <lowcase>submarin</lowcase>e</upcase>.</mixcase> in a <upcase>yellow submarine</upcase>. We <mixcase>don't</mixcase> ha<upcase>ve <lowcase>anything</lowcase> el</upcase>se.";
+
+            var str = new Array();
+            str = inputString.split("");
+
+            var lookFor = "in";
+            
+            function getRandBinary() {
+                // Random bynary digits generator
+                var b = (Math.floor(Math.random() * 9) % 2);
+                return b;
+            }
+
+            function ToMixCase(str) {
+                var result = [];
+
+                for (var i = 0; i < str.length; i++) {
+                    // Get a random number
+                    var rand = getRandBinary();
+            
+                    // Decide what to do.
+                    if (rand == 1) {
+                        result.push(str[i].toLowerCase());
+                    }
+                    else {
+                        result.push(str[i].toUpperCase());
+                    }
+                }
+            
+                return result.join('');
+            }
+            
+
+            function ChooseWhatToDo(command, str) {
+                switch (command) {
+                    case "mixcase":
+                        return ToMixCase(str);
+                    case "lowcase":
+                        return str.toLowerCase();
+                    case "upcase":
+                        return str.toUpperCase();
+                }
+            }
+            
+            var index = 0;
+            while (index != -1) {
+                // Find first tag.
+                index = str.indexOf("<", index);
+                if (index != -1) {
+                    // Check if tag is closing.
+                    if (str[index + 1] != "/") {
+                        index = index + 1;
+                        continue;
+                    }
+            
+                    // Find closing tag bounderies.
+                    var endOpen = index;
+                    var endClose = str.indexOf(">", index);
+            
+                    // Read command.
+                    var cmd = str.slice(index + 2, endClose).join('');
+
+                    // Find opening tag bounderies.
+                    var startOpen = str.lastIndexOf("<", index - 1);
+                    var startClose = startOpen + cmd.length + 2;
+            
+                    // Find text to handle.
+                    var stringToChange = str.slice(startClose, endOpen).join('');
+                    
+                    // Replace tags and text with modified text.
+                    str.splice(startOpen, endClose - startOpen + 1, ChooseWhatToDo(cmd, stringToChange));
+                    
+                    // Begin from the start. Just in case. 
+                    var index = 0;
+                }
+            }
+            
+            // Print result.
+            jsConsole.writeLine(str.join(''));
+            
+        </script>
+    </body>
+</html>
+        

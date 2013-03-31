@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Strings</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            06. Write a function that extracts the content of a html page given as text. The function should return anything that is in a tag, without the tags:<br />
+            &lt;html&gt;&lt;head&gt;&lt;title&gt;Sample site&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;div&gt;text&lt;div&gt;more text&lt;/div&gt;and more...&lt;/div&gt;in body&lt;/body&gt;&lt;/html&gt;<br/>
+            Result:<br />
+            Sample sitetextmore textand more...in body
+        </h3>
+        <br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            // Hardcode input
+            var inputString = "<html><head><title>Sample site</title></head><body><div>text<div>more text</div>and more...</div>in body</body></html>";
+
+            function ParseHtml(str) {
+                var inTag = false;
+                var result = [];
+            
+                // Check input
+                var input = str || "";
+            
+                for (var i = 0; i < input.length; i++) {
+                    if (input[i] === "<") {
+                        inTag = true;
+                        continue;
+                    }
+                    else if (input[i] === ">") {
+                        inTag = false;
+                        continue;
+                    }
+                    else if (inTag === false) {
+                        // In text.
+                        result.push(input[i]);
+                    }
+                }
+            
+                return result.join('');
+            }
+            
+            // Print result
+            jsConsole.writeLine(ParseHtml(inputString));
+            
+        </script>
+    </body>
+</html>
+    

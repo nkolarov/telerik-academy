@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Strings</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3>
+            11. Write a function that formats a string using placeholders:<br />
+            var str = stringFormat("Hello {0}!","Peter");<br />
+            //str = "Hello Peter!";<br />
+            The function should work with up to 30 placeholders and all types<br />
+            var format = "{0}, {1}, {0} text {2}";<br />
+            var str = stringFormat(format,1,"Pesho","Gosho");<br />
+            //str = "1, Pesho, 1 text Gosho"
+        </h3>
+        <br />
+        <div id="js-console"></div>
+        <script src="scripts/js-console.js"></script>
+        <script>
+            function stringFormat(str) {
+                var inputText = str;
+                var result = [];
+                var inPlaceHolder = false;
+                var placeHolderNumber = "";
+                var appendString = false;
+            
+                for (var i = 0; i < inputText.length; i++) {
+                    if (inputText[i] == "{") {
+                        inPlaceHolder = true;
+                        placeHolderNumber = ""; // Clear old placeholder
+                        continue;
+                    }
+                    else if (inputText[i] == "}") {
+                        inPlaceHolder = false;
+                        appendString = true;
+                    }
+            
+                    if (inPlaceHolder == true) {
+                        placeHolderNumber += inputText[i];
+                    }
+                    else if (appendString == false) {
+                        result.push(inputText[i]);
+                    }
+                    else if (appendString == true) {
+                        // We ara at "}" so we must insert place holder value.
+                        var placeHolderValue = arguments[parseInt(placeHolderNumber) + 1];
+                        result.push(placeHolderValue);
+                        appendString = false;
+                    }
+                }
+                return result.join('');
+            }
+            
+            var format = "{0}, {1}, {0} text {2}";
+            var str = stringFormat(format, 1, "Pesho", "Gosho");
+            //str = stringFormat("Hello {0}!", "Peter");
+            jsConsole.writeLine(str);
+            
+        </script>
+    </body>
+</html>
+    
