@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>MOVE DIVS</title>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <script>
+            // 02. Write a script that creates 5 div elements and moves them in circular path with interval of 100 milliseconds.
+
+            // Initialize constraints
+            var maxHeight = screen.height - 400;
+            var maxWidth = screen.width - 400;
+
+            var topX = 300;
+            var leftY = 500;
+
+            var circleRadius = 150;		
+            var angle = 0;
+            var angleStep = 5;
+            var interval = 100;
+
+            var divCounter = 5;
+            var wrapper = document.getElementById("wrapper");
+            
+            // Generate divs
+            for (var i = 0; i < divCounter; i++) {
+                // Correct the angle
+                angle += angleStep;
+                generateDiv(wrapper, angle);
+            }
+
+            // Spin them all
+            var divs = document.getElementsByClassName("crazy");
+            var repeat = setInterval(function () {
+                for (var i = 0, len = divs.length; i < len; i++) {
+                    // Correct the angle
+                    angle += angleStep;
+                    updatePosition(divs[i]);
+                }
+            }, interval);
+
+            function updatePosition(currentElement) {
+                var currentXPosition = topX + Math.cos(angle) * circleRadius;
+                currentElement.style.top = currentXPosition + "px";
+
+                var currentYPosition = leftY + Math.sin(angle) * circleRadius;
+                currentElement.style.left = currentYPosition + "px";
+            }
+
+            function generateDiv(node, angle) {
+
+                // Initialize div and set some styles
+                var currentElement = document.createElement("div");
+                currentElement.classList.add("crazy");
+                currentElement.style.position = "absolute";
+                currentElement.style.width = "50px";
+                currentElement.style.height = "50px";
+                currentElement.style.borderRadius = "50px";
+            
+                currentElement.style.background = "rgb(0, 255, 0)";
+            
+                // Set start position
+                updatePosition(currentElement);
+            
+                node.appendChild(currentElement);
+            }            
+        </script>
+    </body>
+</html>

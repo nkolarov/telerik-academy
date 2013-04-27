@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>DIV Generator</title>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <script>
+            /* TASK:
+                01. Write a script that creates a number of div elements.Each div element must have the following
+                    Random width and height between 20px and 100px
+                    Random background color
+                    Random font color
+                    Random position on the screen (position:absolute)
+                    A strong element with text "div" inside the div
+                    Random border-radius
+                    Random border color
+                    Random border-width between 1px and 20px
+
+            */
+
+            // Initialize constraints
+            var minWidth = 20;
+            var maxWidth = 100;
+            var minHeight = 20;
+            var maxHeight = 100;
+            var minBorderWidth = 1;
+            var maxBorderWidth = 20;
+
+            var maxWindowHeight = screen.height;
+            var maxWindowWidth = screen.width;
+
+            // Not given by the condition. 
+            var maxBorderRadius = 50;
+            var borderStyle = "solid";
+            var divContent = "Just a DIV";
+            var divCounter = 200;
+
+            var wrapper = document.getElementById("wrapper");
+
+            generateAndAppendDivs(wrapper, divCounter);
+
+            function generateRandomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            
+            function generateRandomRGBColor() {
+                var red = generateRandomInt(0, 255);
+                var green = generateRandomInt(0, 255);
+                var blue = generateRandomInt(0, 255);
+            
+                return "rgb(" + red + "," + green + "," + blue + ")"; // Example: rgb(255,255,255)
+            }
+
+            function setRandomDivStyle(
+                node,
+                nodeContent,
+                minWidth,
+                maxWidth,
+                minHeight,
+                maxHeight,
+                borderStyle,
+                minBorderWidth,
+                maxBorderWidth,
+                maxBorderRadius,
+                maxWindowHeight,
+                maxWindowWidth
+                ) {
+                // Set node styles with random values.
+                var width = generateRandomInt(minWidth, maxWidth);
+                node.style.width = width + "px";
+            
+                var height = generateRandomInt(minHeight, maxHeight);
+                node.style.height = height + "px";
+            
+                var backgroungColor = generateRandomRGBColor();
+                node.style.background = backgroungColor;
+            
+                var fontColor = generateRandomRGBColor();
+                node.style.color = fontColor;
+            
+                var top = generateRandomInt(0, maxWindowHeight - height);
+                node.style.top = top + "px";
+            
+                var left = generateRandomInt(0, maxWindowWidth - width);
+                node.style.left = left + "px";
+
+                var nodeContent = "<strong>" + nodeContent + "</strong>";
+                node.innerHTML = nodeContent;
+
+                // Initialize border
+                var borderWidth = generateRandomInt(minBorderWidth, maxBorderWidth);
+                node.style.border = borderWidth + "px";
+                var borderColor = generateRandomRGBColor();
+                node.style.borderColor = borderColor;
+                node.style.borderStyle = borderStyle;
+                var borderRadius = generateRandomInt(0, maxBorderRadius);
+                node.style.borderRadius = borderRadius + "px";
+
+                node.style.position = "absolute";
+            }
+
+            function generateAndAppendDivs(node, count) {
+
+                // Fill a fragment and then append it to the wrapper.
+                var fragment = document.createDocumentFragment();
+            
+                for (var i = 0; i < count; i++) {
+                    var currentElement = document.createElement("div");
+            
+                    setRandomDivStyle(
+                        currentElement,
+                        divContent,
+                        minWidth,
+                        maxWidth,
+                        minHeight,
+                        maxHeight,
+                        borderStyle,
+                        minBorderWidth,
+                        maxBorderWidth,
+                        maxBorderRadius,
+                        maxWindowHeight,
+                        maxWindowWidth
+                        );
+
+                    fragment.appendChild(currentElement);
+                }
+
+                node.appendChild(fragment);
+            }
+
+            //function clearChilds(node) {
+            //    while (node.hasChildNodes()) {
+            //        node.removeChild(node.lastChild);
+            //    }
+            //}
+            
+        </script>
+
+    </body>
+</html>
+    
