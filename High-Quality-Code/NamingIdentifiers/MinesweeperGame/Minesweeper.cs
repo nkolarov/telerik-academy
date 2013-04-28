@@ -7,26 +7,26 @@ namespace NamingIdentifiers
 {
     public class Minesweeper
     {
-        private const int Rows = 5;
-        private const int Columns = 10;
+        private const int ROWS = 5;
+        private const int COLUMNS = 10;
 
         public static void Main()
         {
-            string command = string.Empty;
-            char[,] gameField = GeneratePlayground();
-            char[,] mines = InitializeMines();
-            int pointsCounter = 0;
-            bool exploded = false;
+            const int MAX_POINTS = 35;
             List<Score> topScoringPlayers = new List<Score>(6);
             int row = 0;
             int column = 0;
-            bool startGame = true;
-            const int MaxPoints = 35;
-            bool victory = false;
-
+            int pointsCounter = 0;
+            string command = string.Empty;
+            char[,] gameField = GeneratePlayground();
+            char[,] mines = InitializeMines();
+            bool isNewGame = true;
+            bool isVictory = false;
+            bool exploded = false;
+            
             do
             {
-                if (startGame)
+                if (isNewGame)
                 {
                     StringBuilder welcomeMessage = new StringBuilder();
                     
@@ -39,7 +39,7 @@ namespace NamingIdentifiers
 
                     Console.WriteLine(welcomeMessage.ToString());
                     PrintField(gameField);
-                    startGame = false;
+                    isNewGame = false;
                 }
 
                 Console.WriteLine("Please enter your guess.");
@@ -66,7 +66,7 @@ namespace NamingIdentifiers
                         mines = InitializeMines();
                         PrintField(gameField);
                         exploded = false;
-                        startGame = false;
+                        isNewGame = false;
                         break;
                     case "exit":
                         Console.WriteLine("Bye, bye, bye!");
@@ -80,9 +80,9 @@ namespace NamingIdentifiers
                                 pointsCounter++;
                             }
 
-                            if (MaxPoints == pointsCounter)
+                            if (pointsCounter == MAX_POINTS)
                             {
-                                victory = true;
+                                isVictory = true;
                             }
                             else
                             {
@@ -106,50 +106,50 @@ namespace NamingIdentifiers
                     Console.WriteLine("\nBOOOMMM! You hit a mine! Your Score: {0}", pointsCounter);
                     Console.WriteLine("Please enter your nick name:");
 
-                    string niknejm = Console.ReadLine();
-                    Score t = new Score(niknejm, pointsCounter);
+                    string nickName = Console.ReadLine();
+                    Score playerScore = new Score(nickName, pointsCounter);
                     if (topScoringPlayers.Count < 5)
                     {
-                        topScoringPlayers.Add(t);
+                        topScoringPlayers.Add(playerScore);
                     }
                     else
                     {
-                        for (int i = 0; i < topScoringPlayers.Count; i++)
+                        for (int currentPlayer = 0; currentPlayer < topScoringPlayers.Count; currentPlayer++)
                         {
-                            if (topScoringPlayers[i].Points < t.Points)
+                            if (topScoringPlayers[currentPlayer].Points < playerScore.Points)
                             {
-                                topScoringPlayers.Insert(i, t);
+                                topScoringPlayers.Insert(currentPlayer, playerScore);
                                 topScoringPlayers.RemoveAt(topScoringPlayers.Count - 1);
                                 break;
                             }
                         }
                     }
 
-                    topScoringPlayers.Sort((Score r1, Score r2) => r2.Name.CompareTo(r1.Name));
-                    topScoringPlayers.Sort((Score r1, Score r2) => r2.Points.CompareTo(r1.Points));
+                    topScoringPlayers.Sort((Score firstPlayer, Score secondPlayer) => secondPlayer.Name.CompareTo(firstPlayer.Name));
+                    topScoringPlayers.Sort((Score firstPlayer, Score secondPlayer) => secondPlayer.Points.CompareTo(firstPlayer.Points));
                     PrintRanking(topScoringPlayers);
 
                     gameField = GeneratePlayground();
                     mines = InitializeMines();
                     pointsCounter = 0;
                     exploded = false;
-                    startGame = true;
+                    isNewGame = true;
                 }
 
-                if (victory)
+                if (isVictory)
                 {
-                    Console.WriteLine("\nCongratulations! You win!");
+                    Console.WriteLine("\nCongratulations! You won!");
                     PrintField(mines);
                     Console.WriteLine("Please enter your nick name:");
-                    string imeee = Console.ReadLine();
-                    Score to4kii = new Score(imeee, pointsCounter);
-                    topScoringPlayers.Add(to4kii);
+                    string nickName = Console.ReadLine();
+                    Score playerScore = new Score(nickName, pointsCounter);
+                    topScoringPlayers.Add(playerScore);
                     PrintRanking(topScoringPlayers);
                     gameField = GeneratePlayground();
                     mines = InitializeMines();
                     pointsCounter = 0;
-                    victory = false;
-                    startGame = true;
+                    isVictory = false;
+                    isNewGame = true;
                 }
             }
             while (command != "exit");
@@ -190,11 +190,11 @@ namespace NamingIdentifiers
             field.AppendLine("    0 1 2 3 4 5 6 7 8 9");
             field.AppendLine("   ---------------------");
 
-            for (int row = 0; row < Rows; row++)
+            for (int row = 0; row < ROWS; row++)
             {
                 field.AppendFormat("{0} | ", row);
 
-                for (int col = 0; col < Columns; col++)
+                for (int col = 0; col < COLUMNS; col++)
                 {
                     field.AppendFormat("{0} ", board[row, col]);
                 }
@@ -209,13 +209,13 @@ namespace NamingIdentifiers
 
         private static char[,] GeneratePlayground()
         {
-            char[,] board = new char[Rows, Columns];
+            char[,] board = new char[ROWS, COLUMNS];
 
-            for (int i = 0; i < Rows; i++)
+            for (int row = 0; row < ROWS; row++)
             {
-                for (int j = 0; j < Columns; j++)
+                for (int column = 0; column < COLUMNS; column++)
                 {
-                    board[i, j] = '?';
+                    board[row, column] = '?';
                 }
             }
 
@@ -224,13 +224,13 @@ namespace NamingIdentifiers
 
         private static char[,] InitializeMines()
         {
-            char[,] gameField = new char[Rows, Columns];
+            char[,] gameField = new char[ROWS, COLUMNS];
 
-            for (int i = 0; i < Rows; i++)
+            for (int row = 0; row < ROWS; row++)
             {
-                for (int j = 0; j < Columns; j++)
+                for (int column = 0; column < COLUMNS; column++)
                 {
-                    gameField[i, j] = '-';
+                    gameField[row, column] = '-';
                 }
             }
 
@@ -249,13 +249,13 @@ namespace NamingIdentifiers
 
             foreach (int randomNumber in randomNumbers)
             {
-                int column = randomNumber / Columns;
-                int row = randomNumber % Columns;
+                int column = randomNumber / COLUMNS;
+                int row = randomNumber % COLUMNS;
 
                 if (row == 0 && randomNumber != 0)
                 {
                     column--;
-                    row = Columns;
+                    row = COLUMNS;
                 }
                 else
                 {
@@ -267,7 +267,6 @@ namespace NamingIdentifiers
 
             return gameField;
         }
-
 
         //// Currently not used
         //private static void SetMinesCount(char[,] gameField)
@@ -300,7 +299,7 @@ namespace NamingIdentifiers
                 }
             }
 
-            if (row + 1 < Rows)
+            if (row + 1 < ROWS)
             {
                 if (mines[row + 1, column] == '*')
                 { 
@@ -316,7 +315,7 @@ namespace NamingIdentifiers
                 }
             }
 
-            if (column + 1 < Columns)
+            if (column + 1 < COLUMNS)
             {
                 if (mines[row, column + 1] == '*')
                 { 
@@ -332,7 +331,7 @@ namespace NamingIdentifiers
                 }
             }
 
-            if ((row - 1 >= 0) && (column + 1 < Columns))
+            if ((row - 1 >= 0) && (column + 1 < COLUMNS))
             {
                 if (mines[row - 1, column + 1] == '*')
                 { 
@@ -340,7 +339,7 @@ namespace NamingIdentifiers
                 }
             }
 
-            if ((row + 1 < Rows) && (column - 1 >= 0))
+            if ((row + 1 < ROWS) && (column - 1 >= 0))
             {
                 if (mines[row + 1, column - 1] == '*')
                 { 
@@ -348,7 +347,7 @@ namespace NamingIdentifiers
                 }
             }
 
-            if ((row + 1 < Rows) && (column + 1 < Columns))
+            if ((row + 1 < ROWS) && (column + 1 < COLUMNS))
             {
                 if (mines[row + 1, column + 1] == '*')
                 { 
