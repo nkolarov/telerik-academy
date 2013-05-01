@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Dom Module</title>
+        <script src="scripts/domModule.js"></script>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <ul>
+            <li>
+                <a class="button">Anchor</a>
+            </li>
+            <li>
+                <a class="button">Anchor</a>
+            </li>
+            <li>
+                <a class="button">Anchor</a>
+            </li>
+        </ul>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <script>
+            // Some tests
+            var div = document.createElement("div");
+
+            domModule.appendChild(div, "#wrapper");
+            domModule.removeChild("ul", "li:first-child"); 
+            //remove the first li from each ul
+            domModule.addHandler("a.button", 'click', 
+                                 function() {
+                                     alert("Clicked")
+                                 });
+
+            for (var i = 0; i < 10; i++) {
+                domModule.appendToBuffer("#wrapper", div.cloneNode(true));
+            }
+        </script>
+    </body>
+</html>
