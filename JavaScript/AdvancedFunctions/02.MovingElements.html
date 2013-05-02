@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link href="styles/movingShapes.css" rel="stylesheet" />
+        <script src="scripts/movingShapes.js"></script>
+        <script>
+            function addEllipse() {
+                movingShapes.add("ellipse", "#wrapper");
+            }
+            
+            function addRectanglee() {
+                movingShapes.add("rectangle", "#wrapper");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <button onclick="addEllipse()">Add element with ellipse movement!</button><br />
+            <button onclick="addRectanglee()">Add element with rectangular movement!</button>
+        </div>
+
+    </body>
+</html>
