@@ -7,6 +7,7 @@
     </head>
     <body>
         <div id="wrapper"></div>
+        <h3>You can see the result with inspect element. All elements are added to div#wrapper.</h3>
         <ul>
             <li>
                 <a class="button">Anchor</a>
@@ -26,7 +27,8 @@
         <script>
             // Some tests
             var div = document.createElement("div");
-
+            domModule.appendChild(div, "#wrapper");
+            domModule.appendChild(div, "#wrapper");
             domModule.appendChild(div, "#wrapper");
             domModule.removeChild("ul", "li:first-child"); 
             //remove the first li from each ul

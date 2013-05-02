@@ -5,7 +5,7 @@ All the div elements are with the same width and height.
 The movements of the div elements can be either circular or rectangular.
 The elements should be moving all the time.
 */
-var movingShapes = new function () {
+var movingShapes = (function () {
     var SPEED = 100;
 
     /**
@@ -220,4 +220,4 @@ var movingShapes = new function () {
     return {
         add: add,
     }
-}();
+})();

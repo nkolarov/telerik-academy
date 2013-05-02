@@ -7,7 +7,7 @@
         Get elements by CSS selector
         The module should reveal only the methods.*/
 
-var domModule = function () {
+var domModule = (function () {
 
     /**
     * Appends a child element to a parent by given selector.
@@ -75,4 +75,4 @@ var domModule = function () {
         addHandler: addHandler,
         appendToBuffer: appendToBuffer
     }
-}();
+})();

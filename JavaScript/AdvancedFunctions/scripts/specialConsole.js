@@ -5,7 +5,7 @@ Writing to the console should call toString() to each element
 Writing errors and warnings to the console with and without format
 */
 
-var specialConsole = function () {
+var specialConsole = (function () {
     /**
     * Checks if the function is invoked with more than one parameter (there are placeholders).
     */
@@ -35,7 +35,7 @@ var specialConsole = function () {
 
         return resultString;
     }
-    
+
     /**
     * Checks for placeholders. Replaces them and returns human readable message.
     */
@@ -67,7 +67,7 @@ var specialConsole = function () {
         var message = prepareMessage(arguments);
         console.error(message);
     }
-   
+
     /**
     * Writes a warning message to the console.
     */
@@ -81,4 +81,4 @@ var specialConsole = function () {
         writeError: writeError,
         writeWarning: writeWarning
     }
-}()
+})();
