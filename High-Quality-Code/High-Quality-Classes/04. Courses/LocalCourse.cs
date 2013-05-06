@@ -40,9 +40,10 @@ namespace Courses
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
+            result.Append(base.ToString());
 
             // Removes last closing bracket from base class.                
-            if (result[result.Length] == '}')
+            if (result[result.Length-1] == '}')
             {
                 result.Length--;
             }
