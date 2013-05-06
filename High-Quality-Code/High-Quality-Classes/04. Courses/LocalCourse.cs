@@ -22,8 +22,7 @@ namespace Courses
         /// <param name="teacherName">Name of the teacher.</param>
         /// <param name="students">The students.</param>
         /// <param name="lab">The lab.</param>
-        public LocalCourse(string courseName, string teacherName = null, IList<string> students = null, string lab = null)
-            : base(courseName, teacherName, students)
+        public LocalCourse(string courseName, string teacherName = null, IList<string> students = null, string lab = null) : base(courseName, teacherName, students)
         {
             this.Lab = lab;
         }
@@ -41,8 +40,13 @@ namespace Courses
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
-            result.Append(base.ToString());
-            result.Length--; // Removes last closing bracket from base class.
+
+            // Removes last closing bracket from base class.                
+            if (result[result.Length] == '}')
+            {
+                result.Length--;
+            }
+            
             if (this.Lab != null)
             {
                 result.Append("; Lab = ");

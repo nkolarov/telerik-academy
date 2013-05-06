@@ -22,8 +22,7 @@ namespace Courses
         /// <param name="teacherName">Name of the teacher.</param>
         /// <param name="students">The students.</param>
         /// <param name="town">The town.</param>
-        public OffsiteCourse(string courseName, string teacherName, IList<string> students = null, string town = null)
-            : base(courseName, teacherName, students)
+        public OffsiteCourse(string courseName, string teacherName, IList<string> students = null, string town = null) : base(courseName, teacherName, students)
         {
             this.Town = town;
         }
@@ -42,7 +41,13 @@ namespace Courses
         {
             StringBuilder result = new StringBuilder();
             result.Append(base.ToString());
-            result.Length = result.Length - 2; // Removes last closing bracket from base class.
+
+            // Removes last closing bracket from base class.                
+            if (result[result.Length] == '}')
+            {
+                result.Length--; 
+            }
+
             if (this.Town != null)
             {
                 result.Append("; Town = ");
