@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Carousel</title>
+        <script src="script/carousel.js"></script>
+        <link href="style/carousel.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="slider">
+            <a href="#" class="arrow arrow-left" onclick="carousel.showNextImage(carousel.imageDirection.LEFT);"></a>
+            <a href="#" class="arrow arrow-right" onclick="carousel.showNextImage(carousel.imageDirection.RIGHT);"></a>
+        </div>
+        <script>
+            carousel.addImage("#slider", "image/beautiful-nature-10.jpg");
+            carousel.addImage("#slider", "image/beautiful-nature-141.jpg");
+            carousel.addImage("#slider", "image/beautiful-nature-151.jpg");
+        </script>
+    </body>
+</html>

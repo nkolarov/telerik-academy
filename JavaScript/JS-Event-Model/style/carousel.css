@@ -1,0 +1,25 @@
+﻿#slider {
+    margin: 0;
+    width: 900px;
+}
+
+.arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    top: 300px;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+.arrow-left {
+    left: 15px;
+    background-image: url(../image/arrow-left-small.png);
+}
+
+.arrow-right {
+    left: 850px;
+    background-image: url(../image/arrow-right-small.png);
+}
