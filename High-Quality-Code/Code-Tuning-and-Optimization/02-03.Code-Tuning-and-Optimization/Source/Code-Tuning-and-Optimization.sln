@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMath", "Code-Tuning-and-Optimization\SimpleMath.csproj", "{192519CD-DE7E-40CD-A20D-BE329F4F4490}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexMath", "ComplexMath\ComplexMath.csproj", "{147A498E-C075-4176-AE08-1FF20BB21154}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{192519CD-DE7E-40CD-A20D-BE329F4F4490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192519CD-DE7E-40CD-A20D-BE329F4F4490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192519CD-DE7E-40CD-A20D-BE329F4F4490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192519CD-DE7E-40CD-A20D-BE329F4F4490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147A498E-C075-4176-AE08-1FF20BB21154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147A498E-C075-4176-AE08-1FF20BB21154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147A498E-C075-4176-AE08-1FF20BB21154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147A498E-C075-4176-AE08-1FF20BB21154}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
