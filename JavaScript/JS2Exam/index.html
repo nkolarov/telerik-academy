@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Just a Galery</title>
+        <script src="script/cross-browser-events.js"></script>
+        <script src="script/escapeHTML.js"></script>
+        <script src="script/local-storage-extensions.js"></script>
+        <script src="script/imageGallery.js"></script>
+        <script src="script/imageGalleryRepository.js"></script>
+        <link href="style/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="image-gallery-holder"></div>
+        <div id="ninjas-gallery"></div>
+        <div id="larger-image"></div>
+        <script>
+            /*Task 1*/
+            var gallery = controls.getImageGallery("#image-gallery-holder");
+            gallery.addImage("Ninja Image Title1", "images/ninja.png");
+            gallery.addImage("Ninja Image Title2", "images/ninja.png");
+            gallery.addImage("Ninja Image Title3", "images/ninja.png");
+
+            var ninjaAlbum = gallery.addAlbum("NInjas Ablum Title");
+            ninjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            ninjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            ninjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            ninjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+
+            /*Task 2*/
+            var nestedNinjaAlbum = ninjaAlbum.addAlbum("Nested Ninja Ablum Title");
+            nestedNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            nestedNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            nestedNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            nestedNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+
+            var anotherNestedNinjaAlbum = nestedNinjaAlbum.addAlbum("Another Nested Ninja Ablum Title");
+            anotherNestedNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            anotherNestedNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            anotherNestedNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            anotherNestedNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+
+
+            var anotherRootNinjaAlbum = gallery.addAlbum("Another Root NInjas Ablum Title");
+            anotherRootNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            anotherRootNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            anotherRootNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+            anotherRootNinjaAlbum.addImage("Ninja Image Title", "images/ninja.png");
+
+            gallery.render();
+
+            /*Task 4*/
+            /* Please test in localhost */
+            var imageGalleryData = { title: "Ninja Image Title", src: "images/ninja.png" };
+            imageGalleryRepository.save("ninjas-gallery", imageGalleryData);
+            var galleryData = imageGalleryRepository.load("ninjas-gallery");
+            // console.log(galleryData);
+
+            /*Task 5*/
+            var imageGalleryData = gallery.getImageGalleryData();
+            imageGalleryRepository.save("gallery", imageGalleryData);
+            var galleryData = imageGalleryRepository.load("gallery");
+            console.log(gallery.getImageGalleryData());
+
+            /*Task 6*/
+            var ninjasGallery = controls.buildImageGallery("#ninjas-gallery", galleryData);
+            ninjasGallery.render();
+            
+        </script>
+    </body>
+</html>

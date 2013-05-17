@@ -1,0 +1,43 @@
+﻿#image-gallery-holder,
+#ninjas-gallery {
+    position: relative;
+    width: 900px;
+    margin: 20px;
+    border: 2px solid red;
+}
+
+#larger-image {
+    display: none;
+    position: absolute;
+    left: 1000px;
+    top: 50px;
+    width: 200px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+/*a {
+text-decoration: none;
+color: black;
+}*/
+
+ul {
+    margin: 10px;
+    display: block;
+    text-align: center;
+    list-style: none;
+}
+
+    ul li {
+        margin: 10px;
+        border: 2px solid blue;
+    }
+
+    ul > a {
+        font-size: 40px;
+    }
+
+.image {
+    display: inline-block;
+    width: 100px;
+}
