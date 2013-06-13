@@ -8,6 +8,7 @@ namespace TreeDemo
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
 
     /// <summary>
     /// Represents a node.
@@ -48,5 +49,44 @@ namespace TreeDemo
         /// </summary>
         /// <value>The has parent.</value>
         public bool HasParent { get; set; }
+
+        public dynamic GetSum()
+        {
+            dynamic sum = 0;
+
+            if (this.Children.Count == 0)
+            {
+                return this.Value;
+            }
+
+            sum += this.Value;
+
+            foreach (var node in this.Children)
+            {
+                sum += node.GetSum();
+            }
+
+            return sum;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+
+            if (this.Children.Count == 0)
+            {
+                result.AppendFormat("{{{0}}}", this.Value);
+                return result.ToString();
+            }
+
+            result.AppendFormat("{{{0}->", this.Value);
+            foreach (var node in this.Children)
+            {
+                result.Append(node.ToString());
+            }
+            result.Append("}");
+
+            return result.ToString();
+        }
     }
 }

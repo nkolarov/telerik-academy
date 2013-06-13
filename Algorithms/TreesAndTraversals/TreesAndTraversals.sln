@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. TreeDemo", "TreeDemo\01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. TraverseDirectories", "TraverseDirectories\02. TraverseDirectories.csproj", "{1F224596-C28C-4728-86FD-D115D01E6E8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. DirectoryStructure", "DirectoryStructure\03. DirectoryStructure.csproj", "{F3FDA3B5-2AC7-46B9-B7C8-2CEB971F4830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. DirectoryStructureTests", "DirectoryStructureTests\04. DirectoryStructureTests.csproj", "{C0E8E98C-E5F6-4696-A05C-65DB455594EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{1F224596-C28C-4728-86FD-D115D01E6E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F224596-C28C-4728-86FD-D115D01E6E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F224596-C28C-4728-86FD-D115D01E6E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3FDA3B5-2AC7-46B9-B7C8-2CEB971F4830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3FDA3B5-2AC7-46B9-B7C8-2CEB971F4830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3FDA3B5-2AC7-46B9-B7C8-2CEB971F4830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3FDA3B5-2AC7-46B9-B7C8-2CEB971F4830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E8E98C-E5F6-4696-A05C-65DB455594EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E8E98C-E5F6-4696-A05C-65DB455594EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E8E98C-E5F6-4696-A05C-65DB455594EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E8E98C-E5F6-4696-A05C-65DB455594EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

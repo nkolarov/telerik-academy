@@ -15,8 +15,21 @@ namespace TreeDemo
     public class TreeDemo
     {
         /* 01. You are given a tree of N nodes represented as a set of N-1 pairs of nodes (parent node, child node), each in the range (0..N-1).*/
-        static int N;
-        static Node<int>[] nodes;
+
+        /// <summary>
+        /// Stores the searched sum.
+        /// </summary>
+        public const long SEARCHED_SUM = 6;
+
+        /// <summary>
+        /// Stores the number of nodes.
+        /// </summary>
+        private static int nodesCount;
+
+        /// <summary>
+        /// Stores all nodes.
+        /// </summary>
+        private static Node<int>[] nodes;
 
         /// <summary>
         /// Mains this instance.
@@ -52,6 +65,18 @@ namespace TreeDemo
             var longestPathCount = GetLongestPathCount(GetRoot(nodes));
             Console.WriteLine("Longest path count: ");
             Console.WriteLine(longestPathCount);
+
+            // *f) Write a program to find all subtrees with given sum S of their nodes.
+            Console.WriteLine("Subtrees with sum {0}:", SEARCHED_SUM);
+            foreach (var node in nodes)
+            {
+                var currentNodeSum = node.GetSum();
+                if (currentNodeSum == SEARCHED_SUM)
+                {
+                    var currentNodeSumTwo = node.GetSum();
+                    Console.WriteLine(node);
+                }
+            }
         }
   
         /// <summary>
@@ -59,15 +84,15 @@ namespace TreeDemo
         /// </summary>
         private static void ReadTreeDataFromConsole()
         {
-            N = int.Parse(Console.ReadLine());
-            nodes = new Node<int>[N];
+            nodesCount = int.Parse(Console.ReadLine());
+            nodes = new Node<int>[nodesCount];
 
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < nodesCount; i++)
             {
                 nodes[i] = new Node<int>(i);
             }
 
-            for (int i = 0; i < N - 1; i++)
+            for (int i = 0; i < nodesCount - 1; i++)
             {
                 string edgeAsString = Console.ReadLine();
                 var edgeParts = edgeAsString.Split(' ');
@@ -84,7 +109,7 @@ namespace TreeDemo
         /// Gets the root.
         /// </summary>
         /// <param name="nodes">The nodes.</param>
-        /// <returns></returns>
+        /// <returns>The root.</returns>
         private static Node<int> GetRoot(Node<int>[] nodes)
         {
             bool[] hasParent = new bool[nodes.Length];
