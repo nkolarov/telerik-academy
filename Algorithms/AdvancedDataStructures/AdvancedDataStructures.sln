@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. PriorityQueueImplementation", "PriorityQueueImplementation\01. PriorityQueueImplementation.csproj", "{9561061E-5E52-4F65-83D5-39D8CC18658B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. OrderedBagUsage", "OrderedBagUsage\02. OrderedBagUsage.csproj", "{EC643F26-3462-4DB0-9655-65E92EFAD29C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. TrieImplementation", "TrieImplementation\03. TrieImplementation.csproj", "{737AD625-3215-47B2-862D-ADE75A0EA04C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{9561061E-5E52-4F65-83D5-39D8CC18658B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9561061E-5E52-4F65-83D5-39D8CC18658B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9561061E-5E52-4F65-83D5-39D8CC18658B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC643F26-3462-4DB0-9655-65E92EFAD29C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC643F26-3462-4DB0-9655-65E92EFAD29C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC643F26-3462-4DB0-9655-65E92EFAD29C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC643F26-3462-4DB0-9655-65E92EFAD29C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{737AD625-3215-47B2-862D-ADE75A0EA04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737AD625-3215-47B2-862D-ADE75A0EA04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737AD625-3215-47B2-862D-ADE75A0EA04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737AD625-3215-47B2-862D-ADE75A0EA04C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
