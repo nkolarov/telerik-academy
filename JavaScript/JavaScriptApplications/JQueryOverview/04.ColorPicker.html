@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>ColorPicker</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <p>Please test in Chrome!</p>
+            <label for="color-picker">Change background color: </label>
+            <input type="color" id="color-picker" />
+        </div>
+        <script>
+            /* 04. Implement functionality to change the background color of a web page
+            i.e. select a color from a color picker and set this color as the background color of the page
+            */
+            $("#color-picker").on("change", function () {
+                var newColorValue = $(this).val();
+                $("body").css('background', newColorValue);
+            });
+        </script>
+    </body>
+</html>

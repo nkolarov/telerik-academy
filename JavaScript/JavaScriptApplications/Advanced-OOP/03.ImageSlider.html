@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>ImageSlider</title>
+        <link href="styles/imageSlider.css" rel="stylesheet" />
+        <script src="scripts/extend-create-prototype.js"></script>
+        <script src="scripts/ImageSlider.js"></script>
+    </head>
+    <body>
+        <div>
+            <p>03. Implement a image slider control using Prototypal OOP
+            The slider has a set of images and only one can be enlarged
+            Each image in the image slider has a title and two urls (thumbnail url and large image url)
+            When an image from the thumbnails is clicked
+            The slider must have buttons for prev/next image
+            udents and a form-teacher (класен ръководител)
+        </div>
+        <div id="slider-wrapper"></div>
+        <script>
+            var firstImage = Object.create(Image);
+            firstImage.init("Demo image 1", "images/thumbs/1.jpg", "images/1_large.jpg");
+
+            var secondImage = Object.create(Image);
+            secondImage.init("Demo image 2", "images/thumbs/2.jpg", "images/2_large.jpg");
+
+            var thirdImage = Object.create(Image);
+            thirdImage.init("Demo image 2", "images/thumbs/3.jpg", "images/3_large.jpg");
+
+            var fourthImage = Object.create(Image);
+            fourthImage.init("Demo image 2", "images/thumbs/4.jpg", "images/4_large.jpg");
+
+            var fifthImage = Object.create(Image);
+            fifthImage.init("Demo image 2", "images/thumbs/5.jpg", "images/5_large.jpg");
+            
+            var slider = Object.create(Slider);
+            var images = [firstImage, secondImage, thirdImage, fourthImage, fifthImage];
+            slider.init("slider-wrapper", images);
+            slider.prevButton("prev", "Previous Image");
+            slider.nextButton("next", "Next Image");
+            slider.render();
+        </script>
+    </body>
+</html>

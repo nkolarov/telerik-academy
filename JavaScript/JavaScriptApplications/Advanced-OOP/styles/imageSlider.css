@@ -1,0 +1,13 @@
+﻿#slider-wrapper
+{
+    width: 600px;
+}
+
+#slider-images
+{
+    width: 600px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}

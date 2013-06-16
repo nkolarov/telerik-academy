@@ -1,0 +1,20 @@
+﻿#slider-wrapper
+{
+    width: 300px;
+    height: 300px;
+    border: 1px solid aqua;
+}
+
+.slider-action-button {
+    padding: 10px;
+    margin: 10px;
+    width: 80px;
+}
+
+.slider-element {
+    display: none;
+}
+
+.current {
+    display: block;
+}

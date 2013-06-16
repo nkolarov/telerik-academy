@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>PrototypalSchoolRepository</title>
+        <script src="scripts/extend-create-prototype.js"></script>
+        <script src="scripts/SchoolRepositoryPrototypal.js"></script>
+    </head>
+    <body>
+        <div>
+            <p>
+                01.Implement a repository to keep students and teachers in schools
+                Each school have a name, town and classes of students
+                Students have firstname, last name, age and grade
+                Teachers have firstname, last name, age and speciality
+                Students and Teachers can introduce themselves by printing all their non-function properties in the format PropertyName: PropertyValue
+                Student introducement - Name: Peter Ivanov, Age: 13, grade: 7
+                *Cont: Implement a repository to keep students and teachers in schools
+                Classes have name, capacity of students, a set of students and a form-teacher (класен ръководител)
+                Implement the schools repository using Prototypal OOP
+            </p>
+            <h2>The result is on the console.</h2>
+        </div>
+        <script>
+            // Tests
+            var pesho = Object.create(Person);
+
+            pesho.init("Pesho", "Peshov", 22);
+            console.log(pesho.introduce());
+
+            var gosho = Object.create(Student);
+
+            gosho.init("Gosho", "Goshov", 22, 2);
+            console.log(gosho.introduce());
+
+            var niki = Object.create(Teacher);
+
+            niki.init("Niki", "Niki", 12, "JavaScript");
+            console.log(niki.introduce());
+
+            var students = [pesho, gosho];
+            var formTeacher = niki;
+            var demoClass = Object.create(Class);
+
+            demoClass.init("Demo Class Name", 20, students, formTeacher);
+
+            var demoSchool = Object.create(School);
+            var classes = [demoClass];
+
+            demoSchool.init("Telerik Academy", "Sofia", classes);
+
+            console.log("School Name: " + demoSchool.name);
+            console.log("Town: " + demoSchool.town);
+
+            var firstClass = demoSchool.classes[0];
+
+            console.log("Class Name: " + firstClass.name);
+            console.log("Class Capacity: " + firstClass.capacity);
+            console.log("Class Form Teacher: " + firstClass.formTeacher.introduce());
+            console.log("Students:");
+
+            for (var student in firstClass.students) {
+                if (typeof (students[student]) != "function") {
+                    console.log(students[student].introduce());
+                }
+            }
+        </script>
+    </body>
+</html>
