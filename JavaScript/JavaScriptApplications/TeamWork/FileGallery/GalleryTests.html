@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>GalleryTests</title>
+        <link href="script/QUnit/qunit-1.11.0.css" rel="stylesheet" />
+        <script src="script/jquery-2.0.2.js"></script>
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+        <div id="qunit">
+        </div>
+        <div id="qunit-fixture">
+        </div>
+
+        <script src="script/QUnit/qunit-1.11.0.js"></script>
+
+        <script type="text/javascript">
+            test("Initialize Galley", function () {
+                var gallery = FileRepositoryControl.getFileRepo();
+                var explectedFilesLength = 0;
+                var explectedFoldersLength = 0;
+                console.log(gallery.folders);
+                equal(explectedFilesLength, gallery.files.length);
+                equal(explectedFoldersLength, gallery.folders.length);
+            });
+
+            test("Create folder", function () {
+                var newFolder = FileRepositoryControl.createFolder("folderName");
+                var explectedFolderName = "folderName";
+                equal(newFolder.title, explectedFolderName);
+            });
+
+            test("Create file", function () {
+                var newPDFIle = FileRepositoryControl.createFile("PDF", { title: "TestFile", size: "12", url: "testUrl", numberOfPages: "1" });
+                console.log(newPDFIle);
+                var expectedNumberOfPages = "1";
+                var expectedType = "PDF";
+                equal(newPDFIle.numberOfPages, expectedNumberOfPages);
+                equal(newPDFIle.objectType, expectedType);
+            });
+
+        </script>
+    </body>
+</html>
