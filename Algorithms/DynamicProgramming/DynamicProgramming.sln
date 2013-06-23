@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. KnapsackProblem", "KnapsackProblem\01. KnapsackProblem.csproj", "{95C51598-3FAA-460C-A08D-08E96A4FA41A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. MinimumEditDistance", "MinimumEditDistance\02. MinimumEditDistance.csproj", "{963D524B-5EB9-4531-9052-70773D27B255}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95C51598-3FAA-460C-A08D-08E96A4FA41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C51598-3FAA-460C-A08D-08E96A4FA41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C51598-3FAA-460C-A08D-08E96A4FA41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C51598-3FAA-460C-A08D-08E96A4FA41A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{963D524B-5EB9-4531-9052-70773D27B255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{963D524B-5EB9-4531-9052-70773D27B255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{963D524B-5EB9-4531-9052-70773D27B255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{963D524B-5EB9-4531-9052-70773D27B255}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
