@@ -1,4 +1,1 @@
-telerik-academy
-===============
-
-telerik-academy
+Telerik Academy taska.
