@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Snake Game Test Runner</title>
+
+  <link rel="stylesheet" type="text/css" href="../Jasmine/jasmine-1.3.1/jasmine.css">
+  <script type="text/javascript" src="../Jasmine/jasmine-1.3.1/jasmine.js"></script>
+  <script type="text/javascript" src="../Jasmine/jasmine-1.3.1/jasmine-html.js"></script>
+
+  <script type="text/javascript" src="../snake-game/scripts/class.js"></script>
+  <script type="text/javascript" src="../snake-game/scripts/snake.js"></script>
+
+    <script src="food-tests.js"></script>
+    <script src="moving-object-tests.js"></script>
+    <script src="snake-piece-tests.js"></script>
+    <script src="snake-tests.js"></script>
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
+
+      var htmlReporter = new jasmine.HtmlReporter();
+
+      jasmineEnv.addReporter(htmlReporter);
+
+      jasmineEnv.specFilter = function(spec) {
+        return htmlReporter.specFilter(spec);
+      };
+
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        execJasmine();
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>
