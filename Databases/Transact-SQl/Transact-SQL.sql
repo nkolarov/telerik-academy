@@ -165,34 +165,40 @@ END
 
 -- 07. Define a function in the database TelerikAcademy that returns all Employee's names (first or middle or last name) and all town's names that are comprised of given set of letters. 
 -- Example 'oistmiahf' will return 'Sofia', 'Smith', … but not 'Rob' and 'Guy'.
--- http://www.codeproject.com/Articles/42764/Regular-Expressions-in-MS-SQL-Server-2005-2008
 
-sp_configure 'clr enabled', 1
-GO
-RECONFIGURE
-GO
- 
-USE TelerikAcademy
-CREATE ASSEMBLY
---assembly name for references from SQL script
-SqlRegularExpressions
--- assembly name and full path to assembly dll,
--- SqlRegularExpressions in this case
---change path to dll
-FROM 'D:\SqlAddOns\SqlRegularExpressions.dll'  
-WITH PERMISSION_SET = SAFE
+CREATE FUNCTION ufn_ContainingLetters ( 
+	@Word nvarchar(50),
+	@Letters nvarchar(50))
+RETURNS BIT
+AS
+BEGIN
+	DECLARE @WordLength int;
+	DECLARE @Counter int;
+	DECLARE @CurrentLetter nvarchar(1);
+
+	SET @Counter = 1;
+	SET @WordLength = LEN(@Word);
+
+	-- Check Input
+	IF @WordLength = 0 OR @Word IS NULL
+		RETURN 0;
+	WHILE @Counter <= @WordLength
+		BEGIN
+			SET @CurrentLetter = SUBSTRING(@Word, @Counter, 1);
+			IF CHARINDEX(@CurrentLetter, @Letters) = 0
+				BEGIN
+					RETURN 0;
+				END
+			SET @Counter = @Counter + 1;
+		END
+	RETURN 1;
+END
 GO
 
-CREATE FUNCTION RegExpLike(@Text nvarchar(MAX), @Pattern nvarchar(255)) RETURNS BIT
---function external name
-AS EXTERNAL NAME SqlRegularExpressions.SqlRegularExpressions.[LIKE]
- 
-GO
-
-CREATE FUNCTION ufn_FindEmployeesByRegEx ( @regEx nvarchar(50) )
+CREATE FUNCTION ufn_FindEmployeesContainingLetters ( @Letters nvarchar(50) )
 RETURNS TABLE
 AS
-RETURN 
+RETURN
 	SELECT 
 		emp.FirstName,
 		emp.MiddleName,
@@ -205,17 +211,17 @@ RETURN
 	INNER JOIN Towns
 		ON adr.TownID = Towns.TownID
 	WHERE 
-		dbo.RegExpLike(LOWER(Towns.Name), @regEx) = 1
+		dbo.ufn_ContainingLetters(LOWER(Towns.Name), @Letters) = 1
 		AND (
-			dbo.RegExpLike(LOWER(emp.FirstName), @regEx) = 1
-			OR dbo.RegExpLike(LOWER(ISNULL(emp.MiddleName, '')), @regEx) = 1
-			OR dbo.RegExpLike(LOWER(emp.LastName), @regEx) = 1
+			dbo.ufn_ContainingLetters(LOWER(emp.FirstName), @Letters) = 1
+			OR 
+			dbo.ufn_ContainingLetters(LOWER(ISNULL(emp.MiddleName, '')), @Letters) = 1
+			OR 
+			dbo.ufn_ContainingLetters(LOWER(emp.LastName), @Letters) =1
 			)
 GO
 
-SELECT * FROM ufn_FindEmployeesByRegEx('^[oistmiahf]+$')
-
-
+SELECT * FROM ufn_FindEmployeesContainingLetters('oistmiahf')
 
 -- 08. Using database cursor write a T-SQL script that scans all employees and their addresses 
 -- and prints all pairs of employees that live in the same town.
@@ -271,3 +277,10 @@ DEALLOCATE Employees_Cursor
 -- 10.Define a .NET aggregate function StrConcat that takes as input a sequence of strings and return a single string that consists of the input strings separated by ','. For example the following SQL statement should return a single string:
 -- SELECT StrConcat(FirstName + ' ' + LastName)
 -- FROM Employees
+
+DECLARE @str nvarchar(MAX);
+SET @str = '';
+SELECT @str = CONCAT(@str, e.FirstName, ', ')
+FROM Employees e
+-- TRIM http://stackoverflow.com/questions/7838676/sql-server-trim-character
+SELECT LEFT(@str,LEN(@str)-2);
