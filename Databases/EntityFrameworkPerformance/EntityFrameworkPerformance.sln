@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. NPlusOneProblem", "NPlusOneProblem\01. NPlusOneProblem.csproj", "{B1F1734D-24A1-4F07-85F6-8E7F7477D053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00. TelerikAcademy.Model", "TelerikAcademy.Model\00. TelerikAcademy.Model.csproj", "{9D2A5C01-48E1-4629-ACBF-C40B442332C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. ToListProblem", "ToListProblem\02. ToListProblem.csproj", "{66231CCD-D53A-492A-89DC-0989D9FC244A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1F1734D-24A1-4F07-85F6-8E7F7477D053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F1734D-24A1-4F07-85F6-8E7F7477D053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F1734D-24A1-4F07-85F6-8E7F7477D053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F1734D-24A1-4F07-85F6-8E7F7477D053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D2A5C01-48E1-4629-ACBF-C40B442332C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D2A5C01-48E1-4629-ACBF-C40B442332C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D2A5C01-48E1-4629-ACBF-C40B442332C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D2A5C01-48E1-4629-ACBF-C40B442332C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66231CCD-D53A-492A-89DC-0989D9FC244A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66231CCD-D53A-492A-89DC-0989D9FC244A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66231CCD-D53A-492A-89DC-0989D9FC244A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66231CCD-D53A-492A-89DC-0989D9FC244A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
