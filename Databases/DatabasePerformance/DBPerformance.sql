@@ -94,3 +94,56 @@ WHERE
 -- Execution Time Without Cashe : 00:00:03
 -- Execution Time With Cashe : 00:00:00
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- TAKS 4
+-- Create the same table in MySQL and partition it by date (1990, 2000, 2010). Fill 1 000 000 log entries. Compare the searching speed in all partitions (random dates) to certain partition (e.g. year 1995).
+
+CREATE TABLE ExampleLogs(
+	LogId int NOT NULL AUTO_INCREMENT,
+	LogDate datetime,
+	LogText nvarchar(100),
+	CONSTRAINT PK_Logs_LogId PRIMARY KEY(LogId, LogDate)
+) PARTITION BY RANGE(YEAR(LogDate))(
+	PARTITION p0 VALUES LESS THAN (1990),
+    PARTITION p1 VALUES LESS THAN (2000),
+	PARTITION p2 VALUES LESS THAN (2010),
+	PARTITION p3 VALUES LESS THAN MAXVALUE);
+	
+	
+DELIMITER $$
+DROP PROCEDURE IF EXISTS insert_one_million_rows $$
+
+CREATE PROCEDURE insert_one_million_rows () 
+BEGIN
+	DECLARE counter INT DEFAULT 0;
+	START TRANSACTION;
+	WHILE counter < 1000000 DO
+		INSERT INTO ExampleLogs(LogDate, LogText)
+		VALUES(TIMESTAMPADD(DAY, FLOOR(1 + RAND() * 10000), '1990-01-01'),
+		CONCAT('Text : ', counter));
+		SET counter = counter + 1;
+	END WHILE;
+END $$
+
+-- 3 minutes later.
+
+-- Select from one partition
+SELECT 
+	COUNT(*)
+FROM ExampleLogs PARTITION(p2)
+WHERE 
+	YEAR(ExampleLogs.LogDate) > 2001 
+	AND YEAR(ExampleLogs.LogDate) < 2007 
+-- Execution time: 1.373 sec
+
+-- Select from two partitions
+SELECT 
+	COUNT(*)
+FROM ExampleLogs
+WHERE 
+	YEAR(ExampleLogs.LogDate) > 1995 
+	AND YEAR(ExampleLogs.LogDate) < 2002
+-- Execution time: 3.354 sec
+	
+
+
