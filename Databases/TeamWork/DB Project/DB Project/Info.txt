@@ -1,0 +1,1 @@
+Transfering from MySQL and Excel to SQL server is working.
