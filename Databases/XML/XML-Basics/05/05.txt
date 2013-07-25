@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<namespace:students xmlns:namespace="http://telerikacademy.com">
+  <namespace:student>
+    <namespace:name>Pesho Peshev</namespace:name>
+    <namespace:sex>Male</namespace:sex>
+    <namespace:birth-date>2000-01-01</namespace:birth-date>
+    <namespace:phone>0888888888</namespace:phone>
+    <namespace:email>pesho@pesho.com</namespace:email>
+    <namespace:course>Databases</namespace:course>
+    <namespace:speciality>ninja</namespace:speciality>
+    <namespace:faculty-number>666</namespace:faculty-number>
+    <namespace:exams>
+      <namespace:exam>
+        <namespace:name>HTML Basics</namespace:name>
+        <namespace:tutor>Nakov</namespace:tutor>
+        <namespace:score>80</namespace:score>
+      </namespace:exam>
+      <namespace:exam>
+        <namespace:name>CSS Basics</namespace:name>
+        <namespace:tutor>Ivan</namespace:tutor>
+        <namespace:score>60</namespace:score>
+      </namespace:exam>
+    </namespace:exams>
+  </namespace:student>
+  <namespace:student>
+    <namespace:name>Ivan Ivanov</namespace:name>
+    <namespace:sex>Male</namespace:sex>
+    <namespace:birth-date>2001-01-01</namespace:birth-date>
+    <namespace:phone>0888888881</namespace:phone>
+    <namespace:email>ivan@ivanov.net</namespace:email>
+    <namespace:course>Databases</namespace:course>
+    <namespace:speciality>ninja</namespace:speciality>
+    <namespace:faculty-number>665</namespace:faculty-number>
+    <namespace:exams>
+      <namespace:exam>
+        <namespace:name>HTML Basics</namespace:name>
+        <namespace:tutor>Nakov</namespace:tutor>
+        <namespace:score>70</namespace:score>
+      </namespace:exam>
+      <namespace:exam>
+        <namespace:name>CSS Basics</namespace:name>
+        <namespace:tutor>Doncho</namespace:tutor>
+        <namespace:score>62</namespace:score>
+      </namespace:exam>
+    </namespace:exams>
+  </namespace:student>
+</namespace:students>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directoryStructure>
+	<directory name="TraverseDirectories">
+		<file>App.config</file>
+		<file>directoryStructure.xml</file>
+		<file>TraverseDirectories.cs</file>
+		<file>TraverseDirectories.csproj</file>
+		<file>TraverseDirectories.csproj.user</file>
+		<directory name="bin">
+			<directory name="Debug">
+				<file>TraverseDirectories.exe</file>
+				<file>TraverseDirectories.exe.config</file>
+				<file>TraverseDirectories.pdb</file>
+				<file>TraverseDirectories.vshost.exe</file>
+				<file>TraverseDirectories.vshost.exe.config</file>
+			</directory>
+			<directory name="Release" />
+		</directory>
+		<directory name="obj">
+			<directory name="Debug">
+				<file>DesignTimeResolveAssemblyReferencesInput.cache</file>
+				<file>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+				<file>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+				<file>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+				<file>TraverseDirectories.csproj.FileListAbsolute.txt</file>
+				<file>TraverseDirectories.exe</file>
+				<file>TraverseDirectories.pdb</file>
+				<directory name="TempPE" />
+			</directory>
+		</directory>
+		<directory name="Properties">
+			<file>AssemblyInfo.cs</file>
+		</directory>
+	</directory>
+</directoryStructure>

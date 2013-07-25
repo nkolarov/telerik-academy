@@ -1,0 +1,4 @@
+XML - extensible markup language. 
+It`s a universal language for describing structured data using text with tags. 
+The data is stored together with the meta-data
+It`s also used to describe other languages for data representation.

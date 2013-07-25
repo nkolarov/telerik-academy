@@ -1,0 +1,6 @@
+URI - Uniform Resource Identifier
+URL - Uniform Resource Locator
+URN - Uniform Resource Name
+A Uniform Resource Identifier (URI) is a string of characters which identifies an Internet Resource.
+The URN defines an item's identity, while the URL provides a method for finding it.
+URIs can be classified as locators (URLs), as names (URNs), or as both.

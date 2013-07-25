@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students>
+  <student>
+    <name>Pesho Peshev</name>
+    <sex>Male</sex>
+    <birth-date>2000-01-01</birth-date>
+    <phone>0888888888</phone>
+    <email>pesho@pesho.com</email>
+    <course>Databases</course>
+    <speciality>ninja</speciality>
+    <faculty-number>666</faculty-number>
+    <exams>
+      <exam>
+        <name>HTML Basics</name>
+        <tutor>Nakov</tutor>
+        <score>80</score>
+      </exam>
+      <exam>
+        <name>CSS Basics</name>
+        <tutor>Ivan</tutor>
+        <score>60</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Ivan Ivanov</name>
+    <sex>Male</sex>
+    <birth-date>2001-01-01</birth-date>
+    <phone>0888888881</phone>
+    <email>ivan@ivanov.net</email>
+    <course>Databases</course>
+    <speciality>ninja</speciality>
+    <faculty-number>665</faculty-number>
+    <exams>
+      <exam>
+        <name>HTML Basics</name>
+        <tutor>Nakov</tutor>
+        <score>70</score>
+      </exam>
+      <exam>
+        <name>CSS Basics</name>
+        <tutor>Doncho</tutor>
+        <score>62</score>
+      </exam>
+    </exams>
+  </student>
+</students>

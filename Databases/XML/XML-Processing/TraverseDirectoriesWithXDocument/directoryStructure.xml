@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directoryStructure>
+  <directory name="TraverseDirectoriesWithXDocument">
+    <file>App.config</file>
+    <file>directoryStructure.xml</file>
+    <file>TraverseDirectoriesWithXDocument.cs</file>
+    <file>TraverseDirectoriesWithXDocument.csproj</file>
+    <file>TraverseDirectoriesWithXDocument.csproj.user</file>
+    <directory name="bin">
+      <directory name="Debug">
+        <file>TraverseDirectoriesWithXDocument.exe</file>
+        <file>TraverseDirectoriesWithXDocument.exe.config</file>
+        <file>TraverseDirectoriesWithXDocument.pdb</file>
+        <file>TraverseDirectoriesWithXDocument.vshost.exe</file>
+        <file>TraverseDirectoriesWithXDocument.vshost.exe.config</file>
+      </directory>
+      <directory name="Release" />
+    </directory>
+    <directory name="obj">
+      <directory name="Debug">
+        <file>DesignTimeResolveAssemblyReferencesInput.cache</file>
+        <file>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+        <file>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+        <file>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+        <file>TraverseDirectoriesWithXDocument.csproj.FileListAbsolute.txt</file>
+        <file>TraverseDirectoriesWithXDocument.exe</file>
+        <file>TraverseDirectoriesWithXDocument.pdb</file>
+        <directory name="TempPE" />
+      </directory>
+    </directory>
+    <directory name="Properties">
+      <file>AssemblyInfo.cs</file>
+    </directory>
+  </directory>
+</directoryStructure>

@@ -1,0 +1,25 @@
+XML Namespaces provide a method to avoid element name conflicts.
+In XML, element names are defined by the developer. 
+This often results in a conflict when trying to mix XML documents from different XML applications.
+Name conflicts in XML can easily be avoided using a name prefix.
+The namespace is defined by the xmlns attribute in the start tag of an element.
+The namespace declaration has the following syntax. xmlns:prefix="URI".
+Example:
+
+<root xmlns:h="http://www.w3.org/TR/html4/"
+xmlns:f="http://www.w3schools.com/furniture">
+
+<h:table>
+  <h:tr>
+    <h:td>Apples</h:td>
+    <h:td>Bananas</h:td>
+  </h:tr>
+</h:table>
+
+<f:table>
+  <f:name>African Coffee Table</f:name>
+  <f:width>80</f:width>
+  <f:length>120</f:length>
+</f:table>
+
+</root>
