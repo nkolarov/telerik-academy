@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Model", "MusicStore.Model\MusicStore.Model.csproj", "{0BF8CBA3-2A0B-4006-8AA5-D22D5467EEF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Data", "MusicStore.Data\MusicStore.Data.csproj", "{3F968BE5-B5D9-4E2B-9094-5DBFA075F58B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.WebAPI", "MusicStore.WebAPI\MusicStore.WebAPI.csproj", "{F318225E-D158-4C47-8BF2-296C3E151F9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BF8CBA3-2A0B-4006-8AA5-D22D5467EEF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF8CBA3-2A0B-4006-8AA5-D22D5467EEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF8CBA3-2A0B-4006-8AA5-D22D5467EEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF8CBA3-2A0B-4006-8AA5-D22D5467EEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F968BE5-B5D9-4E2B-9094-5DBFA075F58B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F968BE5-B5D9-4E2B-9094-5DBFA075F58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F968BE5-B5D9-4E2B-9094-5DBFA075F58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F968BE5-B5D9-4E2B-9094-5DBFA075F58B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F318225E-D158-4C47-8BF2-296C3E151F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F318225E-D158-4C47-8BF2-296C3E151F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F318225E-D158-4C47-8BF2-296C3E151F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F318225E-D158-4C47-8BF2-296C3E151F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
