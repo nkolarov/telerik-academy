@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" 
+    Service="WcfServiceDayOfWeek.ServiceDemo" 
+    CodeBehind="ServiceDemo.svc.cs" %>

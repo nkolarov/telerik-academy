@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. WcfServiceDayOfWeek", "WcfServiceDayOfWeek\01. WcfServiceDayOfWeek.csproj", "{4EEBE1C5-5ED2-408B-924D-1D8215586B19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. ServiceDayOfWeek.Client", "ServiceDayOfWeek.Client\02. ServiceDayOfWeek.Client.csproj", "{1C9DBA88-BCC2-42AB-836B-5B8A55065731}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4EEBE1C5-5ED2-408B-924D-1D8215586B19} = {4EEBE1C5-5ED2-408B-924D-1D8215586B19}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. WcfServiceLibraryDemo", "WcfServiceLibraryDemo\03. WcfServiceLibraryDemo.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSiteWcfServicesDemo", "http://localhost:25646", "{106C7062-EB54-4621-88A1-EC14C2B0CC8E}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{15b3e0d2-6217-493a-a690-158c497f5318}|WcfServiceLibraryDemo.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_25646"
+		Debug.AspNetCompiler.PhysicalPath = "WebSiteWcfServicesDemo\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_25646\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_25646"
+		Release.AspNetCompiler.PhysicalPath = "WebSiteWcfServicesDemo\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_25646\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "WebSiteWcfServicesDemo\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. WcfServiceLibraryDemo.Client", "WcfServiceLibraryDemo.Client\05. WcfServiceLibraryDemo.Client.csproj", "{80E34B6C-2C3E-44F7-B481-390364B3B852}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EEBE1C5-5ED2-408B-924D-1D8215586B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EEBE1C5-5ED2-408B-924D-1D8215586B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EEBE1C5-5ED2-408B-924D-1D8215586B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EEBE1C5-5ED2-408B-924D-1D8215586B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C9DBA88-BCC2-42AB-836B-5B8A55065731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C9DBA88-BCC2-42AB-836B-5B8A55065731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C9DBA88-BCC2-42AB-836B-5B8A55065731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C9DBA88-BCC2-42AB-836B-5B8A55065731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106C7062-EB54-4621-88A1-EC14C2B0CC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106C7062-EB54-4621-88A1-EC14C2B0CC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106C7062-EB54-4621-88A1-EC14C2B0CC8E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{106C7062-EB54-4621-88A1-EC14C2B0CC8E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{80E34B6C-2C3E-44F7-B481-390364B3B852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E34B6C-2C3E-44F7-B481-390364B3B852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E34B6C-2C3E-44F7-B481-390364B3B852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E34B6C-2C3E-44F7-B481-390364B3B852}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
