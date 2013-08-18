@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pubnub - Demo</title>
+</head>
+
+<body>
+	<div 
+        pub-key="pub-c-e485b33f-6d32-4410-9cb8-98c61a4a48df" 
+        sub-key="sub-c-44c8865e-0817-11e3-ab8d-02ee2ddab7fe" 
+        ssl="off" origin="pubsub.pubnub.com" id="pubnub"></div>
+    <script src=http://cdn.pubnub.com/pubnub-3.5.3.min.js></script>
+    <h1>Listening for messages from Pubnub...</h1>
+    <textarea id="messagesArea" style="width:300px; height:300px"></textarea>
+    <script>
+        (function() {
+            document.write("")
+            PUBNUB.subscribe({
+                channel: "secret-ninja-channel", 
+                callback: function (message) { 
+                    // Received a message --> print it in the page
+                    document.getElementById('messagesArea').innerHTML += message + '\n';
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
