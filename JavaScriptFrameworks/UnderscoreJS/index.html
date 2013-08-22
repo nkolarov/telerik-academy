@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Scripts/underscore.js"></script>
+    <script src="Scripts/class.js"></script>
+    <title>UnderscoreJsHomework</title>
+</head>
+<body>
+	<h1>Please check the console...</h1>
+    <script>
+        var Student = Class.create({
+            init: function (firstName, lastName, age, marks) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age,
+                this.marks = marks
+            },
+            toString: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        });
+
+        var students = [
+            new Student("Pesho", "Ivanov", 17, [2, 2, 2, 3]),
+            new Student("Ivan", "Petrov", 22, [3, 5, 4, 2]),
+            new Student("Misho", "Atanasov", 18, [5, 5, 5, 5]),
+            new Student("Gosho", "Georgiev", 25, [4, 2, 2, 2]),
+        ];
+
+        var printStudents = function (students) {
+            _.each(students, function (stud) {
+                console.log(stud.toString())
+            });
+        };
+
+        console.log("01. Write a method that from a given array of students finds all students whose first name is before its last name alphabetically." +
+                    "Print the students in descending order by full name. Use Underscore.js");
+
+        var selectedStudents = _.filter(students, function (stud) {
+            return stud.firstName > stud.lastName;
+        });
+
+        selectedStudents = _.sortBy(selectedStudents, function (stud) {
+            return stud.firstName + " " + stud.lastName;
+        });
+
+        selectedStudents = selectedStudents.reverse();
+
+        printStudents(selectedStudents);
+
+        console.log("02. Write function that finds the first name and last name of all students with age between 18 and 24. Use Underscore.js");
+
+        var youngStudents = _.filter(students, function (stud) {
+            return stud.age >= 18 && stud.age <= 24;
+        });
+
+        printStudents(youngStudents);
+
+        console.log("03. Write a function that by a given array of students finds the student with highest marks");
+
+        function getAverageMark(stud) {
+            var averageMark = 0;
+            var marksCount = stud.marks.length;
+            _.each(stud.marks, function (mark) {
+                averageMark += mark;
+            });
+
+            if (marksCount > 0) {
+                return averageMark / marksCount;
+            } else {
+                return 0;
+            }
+        };
+
+        var studentsByMarks = _.sortBy(students, function (stud) {
+            return getAverageMark(stud);
+        });
+        var smarterStudent = _.last(studentsByMarks);
+
+        console.log(smarterStudent.toString() + "; Marks: " + smarterStudent.marks.join(", "));
+
+        console.log("04. Write a function that by a given array of animals, groups them by species and sorts them by number of legs.");
+
+        var Animal = Class.create({
+            init: function (name, species, numerOfLegs) {
+                this.name = name,
+                this.species = species,
+                this.numberOfLegs = numerOfLegs
+            },
+            toString: function () {
+                return this.name + "; " + this.species + "; " + this.numberOfLegs;
+            }
+        });
+
+        var animals = [
+            new Animal("Dvukrakiq zvqr", "beast", 2),
+            new Animal("Cheterikrakia zvqr", "beast", 4),
+            new Animal("Ludata patica", "duck", 2),
+            new Animal("Mecho Puh", "bear", 4),
+            new Animal("Zlia Mecan", "bear", 4),
+            new Animal("Trikrakata lamia", "dragon", 2),
+            new Animal("Shtura Mechka sas 100 kraka", "bear", 100),
+            new Animal("Ranenia puh", "bear", 8),
+        ];
+
+        var orderedAnimals = _.sortBy(animals, 'numberOfLegs');
+        var animalsGroups = _.groupBy(orderedAnimals, 'species');
+
+        _.each(animalsGroups, function (orderedAnimalsGroups, key) {
+            console.log("Species: " + key);
+            _.each(orderedAnimalsGroups, function (animal) {
+                console.log(animal.toString());
+            });
+            console.log("------------------------");
+        });
+
+        console.log("05. By a given array of animals, find the total number of legs. Each animal can have 2, 4, 6, 8 or 100 legs.");
+
+        var legsCount = 0;
+        var legs = _.forEach(animals, function (animal) {
+            legsCount += animal.numberOfLegs;
+        });
+
+        console.log("Legs: " + legsCount);
+
+        console.log("06. By a given collection of books, find the most popular author (the author with the biggest number of books)");
+
+        var Book = Class.create({
+            init: function (bookName, authorName) {
+                this.bookName = bookName,
+                this.authorName = authorName
+            },
+            toStrint: function () {
+                return this.boobName + "; Author:" + this.authorName;
+            }
+        });
+
+        var booksCollection = [
+            new Book("Test book", "Pesho"),
+            new Book("Test book2", "Ivan"),
+            new Book("Test book3", "Mara"),
+            new Book("Test book4", "Pesho"),
+            new Book("Test book5", "Pesho"),
+            new Book("Test book6", "Mara"),
+            new Book("Test book7", "Pesho"),
+        ];
+
+        var groupedBooks = _.groupBy(booksCollection, 'authorName');
+        var sortedGroupd = _.sortBy(groupedBooks, groupedBooks.length);
+        var biggestGroup = _.last(sortedGroupd);
+
+        if (biggestGroup.length > 0) {
+            console.log("The most popular author is: " + biggestGroup[0].authorName);
+        }
+
+        console.log("07. By an array of people find the most common first and last name. Use underscore.");
+
+        var students = [
+            new Student("Pesho", "Ivanov"),
+            new Student("Pesho", "Petrov"),
+            new Student("Ivan", "Petrov"),
+            new Student("Pesho", "Atanasov"),
+            new Student("Gosho", "Georgiev"),
+            new Student("Gosho", "Petrov"),
+        ];
+
+        var firstNamesCounts = _.countBy(students, 'firstName');
+        var maxFirstNameCount = _.max(firstNamesCounts);
+        var mostCommonFirstName = _.invert(firstNamesCounts)[maxFirstNameCount];
+        console.log("Most common first name: " + mostCommonFirstName);
+
+        var lastNamesCounts = _.countBy(students, 'lastName');
+        var maxLastNameCount = _.max(lastNamesCounts);
+        var mostCommonLastName = _.invert(lastNamesCounts)[maxLastNameCount];
+        console.log("Most common last name: " + mostCommonLastName);
+    </script>
+</body>
+</html>
