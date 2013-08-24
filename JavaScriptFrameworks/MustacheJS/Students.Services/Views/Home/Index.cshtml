@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.8.2.js"></script>
+    <script src="Scripts/rsvp.min.js"></script>
+    <script src="Scripts/class.js"></script>
+    <script src="Scripts/mustache.js"></script>
+    <script src="Scripts/controlls.js"></script>
+    <script src="Scripts/http-requester.js"></script>
+    <style>
+        table tr td {
+            border: 1px solid gray;
+        }
+
+        #content, #marks {
+            margin: 20px;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        <br />
+        <hr />
+        02. Create a web services that returns a list of students.
+        <br />
+        Students have first and last name, grade, age and list of marks.
+        <br />
+        Marks have subject and score.
+        <br />
+        Create a Master-detail for the students and their marks.
+        <br />
+        Create a template for rendering students.
+        <br />
+        Create a template for rendering marks.
+        <br />
+        When student is clicked, their marks must be rendered in another HTML element.
+        <br />
+        <hr />
+    </h2>
+    <h2>You may see the source in: 02. students-templates.html</h2>
+    <h2>To work correctly please run the services project.</h2>
+    <h2>Demo:</h2>
+    <div id="content"></div>
+    <div id="marks"></div>
+    <script type="x-mustache-template" id="students-template">	
+			<li id="{{id}}" class="student">{{name}}</li>			
+    </script>
+    <script type="x-mustache-template" id="marks-template">	
+			<ul>
+				{{#subject}} 
+					<li>
+						{{subject}}: <strong>{{score}}</strong>							
+					</li>
+				{{/subject}}
+				{{^subject}}	   
+					<li>
+						This student has no marks, yet	  						
+					</li>
+				{{/subject}}
+			</ul>			
+    </script>
+    <script>
+        request.getJSON("api/students").then(
+            function (students) {
+                loadStudents(students);
+            });
+
+        function loadStudents(students) {
+            var studentsTemplate = Mustache.compile(document.getElementById("students-template").innerHTML);
+            var tableView = controls.getTableView(students, { cols: 5 });
+            var tableViewHtml = tableView.render(studentsTemplate);
+
+            document.getElementById("content").innerHTML = tableViewHtml;
+            $(".student").bind("click", function () {
+                var id = $(this).attr('id');
+                loadStudentsMarks(id);
+            })
+        };
+
+        function loadStudentsMarks(studentId) {
+            $("#marks").hide(100);
+
+            if ($("#marks").hasClass("student-marks-" + studentId)) {
+                $("#marks").removeClass("student-marks-" + studentId);
+                return;
+            } else {
+                $("#marks").removeClass();
+            }
+
+            request.getJSON("api/students/" + studentId + "/marks").then(function (marks) {
+                var marksTemplate = Mustache.compile(document.getElementById("marks-template").innerHTML);
+                var tableView = controls.getTableView(marks, { cols: 2 });
+                var tableViewHtml = tableView.render(marksTemplate);
+
+                document.getElementById("marks").innerHTML = tableViewHtml;
+                $("#marks").addClass("student-marks-" + studentId);
+                $("#marks").show(100);
+            })
+        };
+    </script>
+</body>
+</html>
