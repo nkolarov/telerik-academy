@@ -1,0 +1,3 @@
+﻿(function () {
+    $("#picker").datepicker();
+})();

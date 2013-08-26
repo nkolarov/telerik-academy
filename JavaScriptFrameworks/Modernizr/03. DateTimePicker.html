@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>DateTime Picker</title>
+    <script src="Scripts/modernizr.inputTypes.js"></script>
+</head>
+<body>
+    <!-- 03. Using HTML5 and CSS3 create a page to display a date field with a date picker. Use Modernizr to load the jQueryUI date picker only if the browser does not provide a native date picker.-->
+   <h2>Plese Run me on localhost.</h2>
+   <input type="date" id="picker" />
+    <script>
+        Modernizr.load({
+            test: Modernizr.inputtypes.date,
+            nope: ['/Scripts/jquery-1.9.1.js', '/Scripts/jquery-ui-1.10.3.js', 'Styles/jquery-ui-1.10.3.custom.css'],
+            complete: function () {
+                var jQuery = $.noConflict();
+                jQuery('#picker').datepicker();
+            }
+        });
+        
+    </script>
+</body>
+</html>
