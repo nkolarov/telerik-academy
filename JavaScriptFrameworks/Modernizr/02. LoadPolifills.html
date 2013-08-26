@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Load Polifills</title>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <!--<script src="Scripts/modernizr-canvas-localStorage-geolocation.js"></script>-->
+    <!--<script src="Scripts/modernizr.full.js"></script>-->
+    <script src="Scripts/modernizr.canvas.localstorage.geolocation.audio.video.input.js"></script>
+</head>
+<body>
+    <!-- 02. Create a simple HTML5 application by choice that uses Canvas, GeoLocation and LocalStorage APIs. 
+        Using Modernizr.load() provide fallbacks for older browsers. Use polyfills by choice (e.g. https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills). 
+        Test in old browsers.-->
+    <canvas width="250" height="200" id="canvas"></canvas>
+    <div id="geo"></div>
+        <script>
+            var drawSquare = function () {
+                var canvas = document.getElementById("canvas");
+                var context = canvas.getContext('2d');
+
+                context.beginPath();
+                context.rect(0, 50, 200, 100);
+                context.fillStyle = 'yellow';
+                context.fill();
+                context.lineWidth = 1;
+                context.strokeStyle = 'black';
+                context.stroke();
+            };
+
+            var getLocation = function () {
+
+                var x = document.getElementById("geo");
+                if (!navigator.geolocation) {
+                    $.webshims.polyfill();
+                }
+
+                window.navigator.geolocation.getCurrentPosition(showPosition);
+                
+                function showPosition(position) {
+                    x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+                }
+            };
+
+            var saveToLocalStorage = function () {
+                localStorage.setItem("TestKey", "TestValue");
+            };
+
+            Modernizr.load(
+            {
+                test: Modernizr.canvas,
+                nope: ['/Scripts/flashcanvas.js'],
+                complete: function () {
+                    drawSquare();
+                }
+            });
+
+            Modernizr.load({
+                test: Modernizr.geolocation,
+                nope: 'Scripts/js-webshim/minified/polyfiller.js',
+                complete: function () {
+                    getLocation();
+                }
+            }
+            );
+
+            Modernizr.load({
+                test: Modernizr.localstorage,
+                nope: 'Scripts/StoragePolifill.js',
+                complete: function () {
+                    saveToLocalStorage();
+                }
+            }
+);
+    </script>
+</body>
+</html>

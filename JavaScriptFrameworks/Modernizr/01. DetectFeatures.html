@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Detect Browzer Features</title>
+    <link href="Styles/style.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/class.js"></script>
+    <script src="Scripts/mustache.js"></script>
+    <script src="Scripts/controlls.js"></script>
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+    <script src="Scripts/ua-parser.min.js"></script>
+</head>
+<body>
+    <!-- Create a HTML page to display the current Web browser and the supported and not supported HTML5 and CSS3 features. 
+        Use ua-parser-js to detect the browser type, version, OS and device. 
+        Use Modernizr.js to detect the features (see an example here: http://fiddle.jshell.net/ncuesta/NHTyT/show/). -->
+    <h2>Browser Info:</h2>
+    <hr />
+    <div id="browser-info"></div>
+    <h2>Not supported features:</h2>
+    <hr />
+    <div id="not-supported-features"></div>
+    <h2>Supported features:</h2>
+    <hr />
+    <div id="supported-features"></div>
+    <script type="x-mustache-template" id="feature-template">	
+		<p>
+			{{name}}: <strong>{{supportedMessage}}</strong>							
+		</p>	
+    </script>
+    <script type="x-mustache-template" id="browser-info-template">	
+        <p><strong>Browser:</strong></p>
+        <ul>
+            <li>Browser Name: <strong>{{browser.name}}</strong></li>
+            <li>Browser Version: <strong>{{browser.version}}</strong></li>
+        </ul>	
+        <p><strong>OS:</strong></p>
+        <ul>
+            <li>OS Name: <strong>{{os.name}}</strong></li>
+            <li>OS Version: <strong>{{os.version}}</strong></li>
+        </ul>	
+        <p><strong>Device:</strong></p>
+        <ul>
+            {{#device.model}}
+                <li>Device Model: <strong>{{device.model}}</strong></li>
+            {{/device.model}}
+            {{^device.model}}
+                <li>Device Model: <strong>Not available!</strong></li>
+            {{/device.model}}
+            {{#device.type}}
+                <li>Device Type: <strong>{{device.type}}</strong></li>
+            {{/device.type}}
+            {{^device.type}}
+                <li>Device Type: <strong>Not available!</strong></li>
+            {{/device.type}}
+            {{#device.vendor}}
+                <li>Device Vendor: <strong>{{device.vendor}}</strong></li>
+            {{/device.vendor}}
+            {{^device.vendor}}
+                <li>Device Vendor: <strong>Not available!</strong></li>
+            {{/device.vendor}}
+        </ul>	
+    </script>
+    <script>
+        var supportedFeatures = [];
+        var notSupportedFeatures = [];
+
+        var Feature = Class.create({
+            init: function (featureName, supported) {
+                this.name = featureName,
+                this.isSupported = supported
+            },
+            supportedMessage: function () {
+                return this.isSupported === true ? "Supported!" : "Not supported!";
+            }            
+        });
+
+        var getFeatures = function (obj, prefixName) {
+            prefixName = prefixName ? prefixName + '.' : '';
+
+            for (var prop in obj) {
+                if (typeof (obj[prop]) == 'object') {
+                    getFeatures(obj[prop], prefixName + prop);
+                } else if (typeof (obj[prop]) == 'boolean') {
+                    var currentFeature = new Feature(prefixName + prop, obj[prop]);
+                    if (obj[prop] === true) {
+                        supportedFeatures.push(currentFeature);
+                    } else {
+                        notSupportedFeatures.push(currentFeature);
+                    }
+                }
+            }
+        };
+
+        var loadFeatures = function () {
+            getFeatures(Modernizr, "Modernizr");
+
+            var featureTemplate = Mustache.compile(document.getElementById("feature-template").innerHTML);
+            var supportedTableView = controls.getTableView(supportedFeatures, { cols: 3 });
+            var supportedTableViewHtml = supportedTableView.render(featureTemplate);
+            var notSupportedTableView = controls.getTableView(notSupportedFeatures, { cols: 3 });
+            var notSupportedTableViewHtml = notSupportedTableView.render(featureTemplate);
+
+            document.getElementById("not-supported-features").innerHTML = notSupportedTableViewHtml;
+            document.getElementById("supported-features").innerHTML = supportedTableViewHtml;
+        }();
+
+        var loadBrowserInfo = function () {
+            var parser = new UAParser();
+
+            var parserData = parser.getResult();
+
+            var browserInfoTemplate = document.getElementById("browser-info-template").innerHTML;
+            var browserData = Mustache.render(browserInfoTemplate, parserData);
+
+            document.getElementById("browser-info").innerHTML = browserData;
+        }();
+    </script>
+
+</body>
+</html>
