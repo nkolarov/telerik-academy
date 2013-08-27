@@ -1,0 +1,349 @@
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Students.Services.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Students.Services.pdb
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Antlr3.Runtime.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\EntityFramework.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Microsoft.Data.Edm.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Microsoft.Data.OData.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Newtonsoft.Json.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Net.Http.Formatting.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Spatial.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Helpers.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Http.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Http.OData.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Http.Tracing.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Http.WebHost.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Mvc.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Optimization.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Providers.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Razor.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.WebPages.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.WebPages.Razor.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\WebGrease.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\EntityFramework.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Newtonsoft.Json.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Net.Http.Formatting.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Helpers.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Http.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Http.WebHost.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Mvc.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Razor.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.WebPages.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.WebPages.Razor.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Http.Tracing.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Web.Http.OData.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Microsoft.Data.Edm.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\Microsoft.Data.OData.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\System.Spatial.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\de\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\es\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\fr\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\it\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\ja\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\ko\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\ru\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\obj\Debug\Students.Services.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\obj\Debug\Students.Services.pdb
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS\Students.Services\obj\Debug\Students.Services.csprojResolveAssemblyReference.cache
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Students.Services.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Students.Services.pdb
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Antlr3.Runtime.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\EntityFramework.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Microsoft.Data.Edm.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Microsoft.Data.OData.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Newtonsoft.Json.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Net.Http.Formatting.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Spatial.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Helpers.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Http.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Http.OData.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Http.Tracing.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Http.WebHost.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Mvc.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Optimization.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Providers.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Razor.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.WebPages.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.WebPages.Razor.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\WebGrease.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\EntityFramework.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Newtonsoft.Json.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Net.Http.Formatting.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Helpers.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Http.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Http.WebHost.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Mvc.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Razor.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.WebPages.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.WebPages.Razor.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Http.Tracing.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Web.Http.OData.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Microsoft.Data.Edm.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\Microsoft.Data.OData.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\System.Spatial.xml
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\de\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\es\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\fr\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\it\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\ja\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\ko\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\ru\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\obj\Debug\Students.Services.csprojResolveAssemblyReference.cache
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\obj\Debug\Students.Services.dll
+C:\Users\Udavnika\Documents\Visual Studio 2012\Projects\Js-Frameworks\MustacheJS-Hw\Students.Services\obj\Debug\Students.Services.pdb
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Students.Services.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Students.Services.pdb
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Antlr3.Runtime.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\EntityFramework.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Microsoft.Data.Edm.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Microsoft.Data.OData.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Newtonsoft.Json.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Net.Http.Formatting.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Spatial.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Helpers.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Http.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Http.OData.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Http.Tracing.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Http.WebHost.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Mvc.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Optimization.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Providers.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Razor.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.WebPages.Deployment.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.WebPages.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.WebPages.Razor.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\WebGrease.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\EntityFramework.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Newtonsoft.Json.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Net.Http.Formatting.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Helpers.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Http.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Http.WebHost.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Mvc.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Razor.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.WebPages.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.WebPages.Deployment.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.WebPages.Razor.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Http.Tracing.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Web.Http.OData.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Microsoft.Data.Edm.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\Microsoft.Data.OData.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\System.Spatial.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\de\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\es\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\fr\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\it\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\ja\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\ko\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\ru\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\obj\Debug\Students.Services.csprojResolveAssemblyReference.cache
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\obj\Debug\Students.Services.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS\Students.Services\obj\Debug\Students.Services.pdb
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Students.Services.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Students.Services.pdb
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Antlr3.Runtime.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\EntityFramework.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Microsoft.Data.Edm.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Microsoft.Data.OData.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Newtonsoft.Json.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Net.Http.Formatting.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Spatial.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Helpers.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Http.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Http.OData.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Http.Tracing.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Http.WebHost.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Mvc.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Optimization.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Providers.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Razor.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.WebPages.Deployment.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.WebPages.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.WebPages.Razor.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\WebGrease.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\EntityFramework.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Newtonsoft.Json.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Net.Http.Formatting.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Helpers.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Http.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Http.WebHost.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Mvc.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Razor.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.WebPages.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.WebPages.Deployment.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.WebPages.Razor.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Http.Tracing.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Web.Http.OData.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Microsoft.Data.Edm.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\Microsoft.Data.OData.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\System.Spatial.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\de\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\es\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\fr\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\it\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\ja\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\ko\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\ru\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\obj\Debug\Students.Services.csprojResolveAssemblyReference.cache
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\obj\Debug\Students.Services.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS - Copy\Students.Services\obj\Debug\Students.Services.pdb
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\Students.Services.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\Students.Services.pdb
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\Antlr3.Runtime.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\EntityFramework.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\Microsoft.Data.Edm.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\Microsoft.Data.OData.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Net.Http.Formatting.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Spatial.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Helpers.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Http.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Http.OData.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Http.Tracing.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Http.WebHost.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Mvc.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Optimization.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Providers.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Razor.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.WebPages.Deployment.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.WebPages.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.WebPages.Razor.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\WebGrease.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\EntityFramework.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\Newtonsoft.Json.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Net.Http.Formatting.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Helpers.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Http.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Http.WebHost.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Mvc.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Razor.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.WebPages.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.WebPages.Deployment.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.WebPages.Razor.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Http.Tracing.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Web.Http.OData.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\Microsoft.Data.Edm.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\Microsoft.Data.OData.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\System.Spatial.xml
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\de\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\es\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\fr\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\it\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\ja\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\ko\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\ru\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\obj\Debug\Students.Services.csprojResolveAssemblyReference.cache
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\obj\Debug\Students.Services.dll
+C:\Users\N.Kolarov\Documents\visual studio 2012\Projects\Js-Frameworks\RequireJS-Hw\Students.Services\obj\Debug\Students.Services.pdb

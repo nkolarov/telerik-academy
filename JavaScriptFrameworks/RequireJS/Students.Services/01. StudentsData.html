@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StudentsLibrary</title>
+    <script src="Scripts/libs/require.js" data-main="Scripts/app-config"></script>
+<!--    <script src="Scripts/jquery-1.8.2.js"></script>
+    <script src="Scripts/rsvp.min.js"></script>
+    <script src="Scripts/class.js"></script>
+    <script src="Scripts/mustache.js"></script>
+    <script src="Scripts/controlls.js"></script>
+    <script src="Scripts/http-requester.js"></script>-->
+    <style>
+        li {
+            list-style-type: none;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        #content, #marks {
+            float: left;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>To work correctly please run the services project.</h2>
+    <h2>Demo:</h2>
+    <div id="content"></div>
+    <div id="marks"></div>
+    <script type="x-mustache-template" id="students-template">	
+			<li id="{{id}}" class="student">{{name}}</li>			
+    </script>
+    <script type="x-mustache-template" id="marks-template">	
+			<ul>
+				{{#subject}} 
+					<li>
+						{{subject}}: <strong>{{score}}</strong>							
+					</li>
+				{{/subject}}
+				{{^subject}}	   
+					<li>
+						This student has no marks, yet	  						
+					</li>
+				{{/subject}}
+			</ul>			
+    </script>
+<!--        
+    01. Create the following web services:
+        GET api/students  - returns all students
+        Students have id, name and grade
+        GET api/students/{studentId}/marks - returns the marks of a student
+        Marks have subject and score
+        No need to use a database, xml file or any other kinds of data storage. You can use a regular array.
+        Using the web services develop a client application with two "pages"
+        On the first page show all students
+        The second page shows the marks of a student
+        Load the second page when a student from the first is clicked
+        Separate the application in the following modules:
+        HttpRequester - performs HTTP GET and HTTP POST requests
+        DataPersister - uses HttpRequester to fetch data from the storage (the web services)
+        Controls - renders objects to HTML elements
+        Application - handles event handlings, page load, etc…
+        Use promises for the HTTP requests
+        You can use Q.js, RSVP.js or any other library
+        Use RequireJS to define and use your modules
+        Use mustache.js for templating the data
+        Use jQuery, prototype.js or native XmlHttpRequest to make the AJAX calls
+
+    02. Implement a ComboBox control (like a dropdown list)
+        The ComboBox holds a set of items (an array)
+        Initially only a single item, the selected item, is visible (the ComboBox is collapsed)
+        When the selected item is clicked, all other items are shown (the ComboBox is expanded)
+        If an item is clicked, it becomes the selected item and the ComboBox collapses
+        Each of the items in a ComboBox can contain any valid HTML code
+
+    -->
+</body>
+</html>
