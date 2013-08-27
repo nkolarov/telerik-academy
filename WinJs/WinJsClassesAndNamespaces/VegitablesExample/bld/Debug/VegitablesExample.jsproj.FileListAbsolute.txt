@@ -1,0 +1,13 @@
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bin\Debug\resources.pri
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bin\Debug\AppxManifest.xml
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bin\Debug\VegitablesExample.build.appxrecipe
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bld\Debug\priconfig.xml.intermediate
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bld\Debug\layout.resfiles.intermediate
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bld\Debug\resources.resfiles.intermediate
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bld\Debug\pri.resfiles.intermediate
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bld\Debug\priconfig.xml
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bld\Debug\layout.resfiles
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bld\Debug\resources.resfiles
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bld\Debug\pri.resfiles
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bld\Debug\LanguageQualifiers.txt
+c:\users\n.kolarov\documents\visual studio 2012\Projects\Js-Frameworks\WinJsClassesAndNamespaces\VegitablesExample\bld\Debug\ProjectArchitectures.txt
