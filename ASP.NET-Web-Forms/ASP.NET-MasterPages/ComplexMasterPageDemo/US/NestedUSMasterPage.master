@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NestedUSMasterPage.master.cs" Inherits="ComplexMasterPageDemo.US.NestedUSMasterPage" %>
+<asp:Content ID="USContent" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+    <p>You are in the US version of our site!</p>
+    <aside id="menu-sidebar">
+        <aside class="sidebar-title">
+            <span>Menu</span>
+            <ul>
+                <li><a href="~/US/Home.aspx" runat="server">Home</a></li>
+                <li><a href="~/US/About.aspx" runat="server">About</a></li>
+                <li><a href="~/US/Contacts.aspx" runat="server">Contacts</a></li>
+            </ul>
+        </aside>
+    </aside>
+    <asp:ContentPlaceHolder ID="LocalLanguageHolder" runat="server" />
+</asp:Content>

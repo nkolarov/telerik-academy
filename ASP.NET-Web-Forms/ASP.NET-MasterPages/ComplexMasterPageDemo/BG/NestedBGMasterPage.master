@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NestedBGMasterPage.master.cs" Inherits="ComplexMasterPageDemo.US.NestedUSMasterPage" %>
+<asp:Content ID="BGContent" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+    <p>Здравейте, Вие сте в българската версия на нашия сайт!</p>
+    <aside id="menu-sidebar">
+        <aside class="sidebar-title">
+            <span>Menu</span>
+            <ul>
+                <li><a href="~/BG/Home.aspx" runat="server">Начало</a></li>
+                <li><a href="~/BG/About.aspx" runat="server">За Нас</a></li>
+                <li><a href="~/BG/Contacts.aspx" runat="server">Контакти</a></li>
+            </ul>
+        </aside>
+    </aside>
+    <asp:ContentPlaceHolder ID="LocalLanguageHolder" runat="server" />
+</asp:Content>
