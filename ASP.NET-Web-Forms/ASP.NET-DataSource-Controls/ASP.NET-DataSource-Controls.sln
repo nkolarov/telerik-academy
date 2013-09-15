@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldInfo", "WorldInfo\WorldInfo.csproj", "{22536AA7-7C63-4875-AE39-CCFD08641235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoList.csproj", "{71B919B9-5B00-4D49-BF8F-0DF748DAA8A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CB164F89-D783-4D2F-9D91-6E411A5C3612}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22536AA7-7C63-4875-AE39-CCFD08641235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22536AA7-7C63-4875-AE39-CCFD08641235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22536AA7-7C63-4875-AE39-CCFD08641235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22536AA7-7C63-4875-AE39-CCFD08641235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B919B9-5B00-4D49-BF8F-0DF748DAA8A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B919B9-5B00-4D49-BF8F-0DF748DAA8A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B919B9-5B00-4D49-BF8F-0DF748DAA8A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B919B9-5B00-4D49-BF8F-0DF748DAA8A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
