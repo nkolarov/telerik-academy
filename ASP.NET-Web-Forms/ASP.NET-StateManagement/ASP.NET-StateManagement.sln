@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. DetectClientData", "DetectClientData\01. DetectClientData.csproj", "{5DA53F78-A173-4627-8C83-6CE6A4513BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. StringListInSession", "StringListInSession\02. StringListInSession.csproj", "{649927AD-83D4-4FAE-B0AB-314579280EE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. HelloCookie", "HelloCookie\03. HelloCookie.csproj", "{A11625AF-517B-472A-982C-AD98F9A84F7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. RemoveViewstate", "RemoveViewstate\04. RemoveViewstate.csproj", "{32320C69-787C-4188-A595-A9CC8B95AB17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. ApplicationCounter", "ApplicationCounter\05. ApplicationCounter.csproj", "{4A5C00ED-18C4-46C4-A2D3-D06070EDB296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. ApplicationDbCounter", "ApplicationDbCounter\06. ApplicationDbCounter.csproj", "{B1E3A232-7A3A-4DAC-BE02-022E6A919105}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{192C0B09-3A58-48E5-A98C-461326F5A937}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DA53F78-A173-4627-8C83-6CE6A4513BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA53F78-A173-4627-8C83-6CE6A4513BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA53F78-A173-4627-8C83-6CE6A4513BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA53F78-A173-4627-8C83-6CE6A4513BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{649927AD-83D4-4FAE-B0AB-314579280EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649927AD-83D4-4FAE-B0AB-314579280EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649927AD-83D4-4FAE-B0AB-314579280EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649927AD-83D4-4FAE-B0AB-314579280EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A11625AF-517B-472A-982C-AD98F9A84F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A11625AF-517B-472A-982C-AD98F9A84F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A11625AF-517B-472A-982C-AD98F9A84F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A11625AF-517B-472A-982C-AD98F9A84F7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32320C69-787C-4188-A595-A9CC8B95AB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32320C69-787C-4188-A595-A9CC8B95AB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32320C69-787C-4188-A595-A9CC8B95AB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32320C69-787C-4188-A595-A9CC8B95AB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A5C00ED-18C4-46C4-A2D3-D06070EDB296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5C00ED-18C4-46C4-A2D3-D06070EDB296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5C00ED-18C4-46C4-A2D3-D06070EDB296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5C00ED-18C4-46C4-A2D3-D06070EDB296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E3A232-7A3A-4DAC-BE02-022E6A919105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E3A232-7A3A-4DAC-BE02-022E6A919105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E3A232-7A3A-4DAC-BE02-022E6A919105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E3A232-7A3A-4DAC-BE02-022E6A919105}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
