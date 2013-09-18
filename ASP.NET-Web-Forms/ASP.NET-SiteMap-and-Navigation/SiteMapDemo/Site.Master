@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SiteMapDemo.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SitemapDemo</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Site.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form" runat="server">
+        <header>
+            <h2>Sitemap Demo</h2>
+            <div class="clear hideSkiplink">
+                <asp:Menu
+                    ID="Menu"
+                    runat="server"
+                    DataSourceID="SiteMapDataSource"
+                    SkipLinkText=""
+                    EnableViewState="False"
+                    IncludeStyleBlock="False"
+                    Orientation="Horizontal"
+                    CssClass="menu"
+                    StaticDisplayLevels="2">
+                </asp:Menu>
+                <asp:SiteMapPath ID="SiteMapPath" runat="server"></asp:SiteMapPath>
+            </div>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </form>
+    <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
+</body>
+</html>
