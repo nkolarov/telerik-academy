@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Threads" description="BGTatko - Home Page" url="~/Threads.aspx">
+      <siteMapNode title="Users" description="BGTatko - Users" url="~/Users.aspx" />
+      <siteMapNode title="Categories" description="BGTatko - Categories" url="~/Categories.aspx" />
+      <siteMapNode title="Tags" description="BGTatko - Tags" url="~/Tags.aspx" />
+      <siteMapNode title="New Thread" description="BGTatko - New Thread" url="~/NewThread.aspx" />
+      <siteMapNode title="Login" description="Login Page" url="~/Account/Login.aspx" />
+      <siteMapNode title="Register" description="User Registration Page" url="~/Account/Register.aspx" />
+      <siteMapNode title="Admin" description="BGTatko - Administration Page" url="~/Admin/Admin.aspx" roles="admin" />
+      <siteMapNode title="EditUsers" description="Edit users - BGTatko - Administration Page" url="~/Admin/EditUsers.aspx" roles="admin" />
+      <siteMapNode title="TreeView" description="BGTatko - TreeView Page" url="~/TreeView.aspx" />
+  </siteMapNode>
+</siteMap>

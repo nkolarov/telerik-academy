@@ -1,0 +1,103 @@
+﻿body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/* styles for removing the background from form */
+.no-color {
+    background-color: white;
+    border-style: none;
+}
+
+.container tr {
+    margin: 5px;
+    position: relative;
+}
+
+.thread-votes, .thread-posts {
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    margin: 3px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #ddd;
+    vertical-align: central;
+}
+
+.vote-action {
+    text-align: center;
+    margin: 10px 0 10px 5px;
+    display: inline-block;
+}
+
+.votes-results {
+    top: 15px;
+    right: 10px;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+}
+
+.value, .posts-num-value {
+    font-size: 1.3rem;
+}
+
+.vote {
+    margin: 3px;
+    display: block;
+    width: 19px;
+    height: 19px;
+    border-radius: 3px;
+    border: 1px solid #888;
+}
+
+    .vote:hover {
+        box-shadow: #888 0 0 5px;
+    }
+
+    .vote:active {
+        box-shadow: #888 0 0 5px inset;
+    }
+
+.vote-up {
+    background-image: url("../img/glyphicons-halflings.png");
+    background-position: -285px -117px;
+}
+
+.vote-down {
+    background-image: url("../img/glyphicons-halflings.png");
+    background-position: -310px -116px;
+}
+
+.thread-posts {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+}
+
+.posts-num {
+    margin: 15px 0;
+}
+
+.thread-posts {
+    margin-left: 90px;
+}
+
+.thread-info {
+    margin: 10px 10px 10px 180px;
+    display: inline-block;
+}
+
+    .thread-info > a {
+        font-size: 1.3rem;
+    }
+
+td {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+    td:hover {
+        box-shadow: #ddd 0 0 20px inset;
+    }
