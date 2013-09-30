@@ -1,0 +1,27 @@
+﻿@model WebCalculator.Models.UnitCalculator
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="hero-unit">
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+
+        @Html.Label("InputQuantity", "Quantity")
+        @Html.TextBoxFor(m => m.Quantity, new { id = "InputQuantity" })
+        @Html.Label("InputType", "Type")
+        @Html.DropDownListFor(m => m.SelectedUnit, Model.MeasureTypeItems, new { id = "InputType" })
+        @Html.Label("InputKilo", "Kilo")
+        @(Html.DropDownListFor(x => x.SelectedKilo, Model.KiloTypeItems, new { id = "InputKilo" })
+
+        )
+        <br />
+        <input type="submit" name="Calculate" value="Calculate" />
+    }
+</div>
+@if (ViewBag.Converted == true)
+	{
+        Html.RenderPartial("_ConverterResults", Model.Conversions);
+	}
+

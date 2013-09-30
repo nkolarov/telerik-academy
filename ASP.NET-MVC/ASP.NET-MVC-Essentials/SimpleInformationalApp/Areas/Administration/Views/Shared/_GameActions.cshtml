@@ -1,0 +1,9 @@
+﻿@model SimpleInformationalApp.Models.Game
+
+<div>
+    <h3>Title: @Model.Title</h3>
+    @Html.ActionLink("View Details", "GameDetails", "Games", new {area = "",  id = Model.Id }, null) |
+    @Html.ActionLink("Edit", "Edit", "GamesAdmin", new { id = Model.Id }, null) |
+    @Html.ActionLink("Delete", "Delete", "GamesAdmin", new { id = Model.Id }, null)
+</div>
+

@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="hero-unit">
+    <h2> This is our informational home books page.</h2>
+    <div> To see all books visit: @Html.ActionLink("View Games", "Index", "Games")</div>
+
+    @section adminNavigation{
+        @Html.Partial("_AdminNavigationSection")
+    }
+
+</div>

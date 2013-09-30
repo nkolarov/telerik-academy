@@ -1,0 +1,6 @@
+﻿@model SimpleInformationalApp.Models.Game
+
+<div>
+    <h3>Title: @Model.Title</h3>
+    @Html.ActionLink("View Details", "GameDetails", "Games", new { id = Model.Id }, null)
+</div>

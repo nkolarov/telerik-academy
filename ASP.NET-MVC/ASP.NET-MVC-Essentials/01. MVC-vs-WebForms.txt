@@ -1,0 +1,16 @@
+01. MVC -
+- Enable clean separation of concerns (SoC) .
+- Enable full control over the rendered HTML.
+- Enable Test Driven Development (TDD) (built with TDD in mind).
+- SEO and REST friendly URL.
+- Easy integration with JavaScript frameworks.
+- Support third-party view engines such as NVelocity, Brail, NHaml.
+- No ViewState and PostBack events.
+- Follows the stateless nature of web.
+- Extensible and Pluggable framework. 
+
+02. Web Forms
+- Provides RAD development.
+- Easy development model for heavy data-driven LOB applications.
+- Provides rich controls.
+- Familiar model for windows form developers.

@@ -1,0 +1,9 @@
+﻿@model IDictionary<string, double>
+
+@foreach (var item in Model)
+{
+    <dl>
+        <dt>@item.Key</dt>
+        <dd>@item.Value</dd>
+    </dl>
+}

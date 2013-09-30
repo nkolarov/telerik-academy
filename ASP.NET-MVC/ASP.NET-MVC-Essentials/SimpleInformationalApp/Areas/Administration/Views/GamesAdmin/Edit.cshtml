@@ -1,0 +1,7 @@
+﻿@model SimpleInformationalApp.Models.Game
+
+<div>
+    <h3>Title: @Model.Title</h3>
+    @Html.EditorFor( m => m.Title, "Game Title")
+    @Html.EditorFor(m => m.Description, "Game Description")
+</div>

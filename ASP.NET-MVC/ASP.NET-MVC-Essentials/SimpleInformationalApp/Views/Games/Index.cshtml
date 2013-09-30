@@ -1,0 +1,14 @@
+﻿@using SimpleInformationalApp.Models
+@model IEnumerable<Game>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>All Games</h2>
+
+@foreach (Game game in Model)
+{
+    @Html.Partial("_GameInfo", game)
+}
+
