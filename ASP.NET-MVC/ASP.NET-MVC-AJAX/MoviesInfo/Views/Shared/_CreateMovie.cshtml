@@ -1,0 +1,79 @@
+﻿@model MoviesInfo.ViewModels.MovieViewModel
+
+@using (Ajax.BeginForm(
+    "Create",
+    "Movies",
+    new AjaxOptions
+    {
+        HttpMethod = "POST",
+        OnBegin = "onValidate",
+        OnSuccess = "reloadPage"
+    },
+    new { id = "formCreateMovie" }))
+{
+
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset class="form-horizontal">
+        <legend>Movie</legend>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.Title, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.Title)
+                @Html.ValidationMessageFor(model => model.Title, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.Year, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.Year)
+                @Html.ValidationMessageFor(model => model.Year, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.LandingMaleRoleName, new { @class = "control-label" })
+            <div class="controls">
+                @Html.DropDownListFor(model => model.LandingMaleRoleName, Model.Actors)
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.LandingFemaleRoleName, new { @class = "control-label" })
+            <div class="controls">
+                @Html.DropDownListFor(model => model.LandingFemaleRoleName, Model.Actresses)
+            </div>
+        </div>
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Create" class="btn" />
+            <input type="button" value="Cancel" onclick="closeCreateForm()" class="btn" />
+        </div>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<script>
+    function reloadPage() {
+        $('#create-movie').html("");
+        window.location = "/Movies";
+    }
+
+    function closeCreateForm() {
+        $('#create-movie').html("");
+    }
+
+    var onValidate = function (e) {
+        $.validator.unobtrusive.parse($("#formCreateMovie"));
+        var isValid = $("#formCreateMovie").valid();
+        if (!isValid) {
+            e.abort();
+        }
+    };
+</script>

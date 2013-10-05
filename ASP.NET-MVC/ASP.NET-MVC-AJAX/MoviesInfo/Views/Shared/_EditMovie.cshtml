@@ -1,0 +1,81 @@
+﻿@model MoviesInfo.ViewModels.MovieViewModel
+
+@using (Ajax.BeginForm(
+    "Update",
+    "Movies",
+    new AjaxOptions
+    {
+        HttpMethod = "POST",
+        OnBegin = "onValidate",
+        OnSuccess = "reloadPage"
+
+    },
+    new { id = "formEditMovie" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset class="form-horizontal">
+        <legend>Movie</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.Title, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.Title)
+                @Html.ValidationMessageFor(model => model.Title, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.Year, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.Year)
+                @Html.ValidationMessageFor(model => model.Year, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.LandingMaleRoleName, new { @class = "control-label" })
+            <div class="controls">
+                @Html.DropDownListFor(model => model.LandingMaleRoleId, Model.Actors)
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.LandingFemaleRoleName, new { @class = "control-label" })
+            <div class="controls">
+                @Html.DropDownListFor(model => model.LandingFemaleRoleId, Model.Actresses)
+            </div>
+        </div>
+        <div class="form-actions no-color">
+            <input type="submit" value="Save" class="btn" />
+            <input type="button" value="Cancel" onclick="closeEditForm()" class="btn" />
+        </div>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script>
+    function reloadPage() {
+        $('#edit-movie').html("");
+        window.location = "/Movies";
+    }
+
+    function closeEditForm() {
+        $('#edit-movie').html("");
+    }
+
+    var onValidate = function (e) {
+        $.validator.unobtrusive.parse($("#formEditMovie"));
+        var isValid = $("#formEditMovie").valid();
+        if (!isValid) {
+            e.abort();
+        }
+    };
+</script>
+

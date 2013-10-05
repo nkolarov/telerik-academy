@@ -1,0 +1,71 @@
+﻿@model IEnumerable<MoviesInfo.ViewModels.MovieViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Ajax.ActionLink("Create Movie", "Create", new AjaxOptions()
+        {
+            HttpMethod = "GET",
+            InsertionMode = InsertionMode.Replace,
+            UpdateTargetId = "create-movie"
+        }
+    )
+</p>
+<div id="create-movie"></div>
+<div id="edit-movie"></div>
+<div id="delete-movie"></div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LandingMaleRoleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LandingFemaleRoleName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LandingMaleRoleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LandingFemaleRoleName)
+            </td>
+            <td>
+                @Ajax.ActionLink("Edit Movie", "Edit", "Movies", new { id = item.Id }, new AjaxOptions()
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "edit-movie"
+                }) |
+                @Ajax.ActionLink("Delete Movie", "Delete", "Movies", new { id = item.Id }, new AjaxOptions()
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "delete-movie"
+                })
+            </td>
+        </tr>
+    }
+
+</table>
+

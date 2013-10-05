@@ -1,0 +1,72 @@
+﻿@model MoviesInfo.ViewModels.ActorViewModel
+
+@using (Ajax.BeginForm(
+    "Create",
+    "Actors",
+    new AjaxOptions
+    {
+        HttpMethod = "POST",
+        OnBegin = "onValidate",
+        OnSuccess = "reloadPage"
+
+    },
+    new { id = "formCreateActor" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset class="form-horizontal">
+        <legend>Actor</legend>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.Studio, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.Studio)
+                @Html.ValidationMessageFor(model => model.Studio, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.StudioAddress, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.StudioAddress)
+                @Html.ValidationMessageFor(model => model.StudioAddress, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Create" class="btn" />
+            <input type="button" value="Cancel" onclick="closeCreateForm()" class="btn" />
+        </div>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<script>
+    function reloadPage() {
+        $('#create-actor').html("");
+        window.location = "/Actors";
+    }
+
+    function closeCreateForm() {
+        $('#create-actor').html("");
+    }
+
+    var onValidate = function (e) {
+        $.validator.unobtrusive.parse($("#formCreateActor"));
+        var isValid = $("#formCreateActor").valid();
+        if (!isValid) {
+            e.abort();
+        } 
+    };
+</script>

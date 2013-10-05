@@ -1,0 +1,65 @@
+﻿@model IEnumerable<MoviesInfo.ViewModels.ActorViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Ajax.ActionLink("Create Actor", "Create", new AjaxOptions
+    {
+        HttpMethod = "GET",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "create-actor"
+    })
+</p>
+
+<div id="create-actor"></div>
+<div id="edit-actor"></div>
+<div id="delete-actor"></div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Studio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudioAddress)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Studio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudioAddress)
+            </td>
+            <td>
+                @Ajax.ActionLink("Edit Actor", "Edit", "Actors", new { id = item.Id }, new AjaxOptions
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "edit-actor"
+                }) |
+                @Ajax.ActionLink("Delete Actor", "Delete", "Actors", new { id = item.Id }, new AjaxOptions
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "delete-actor"
+                })
+                            
+            </td>
+        </tr>
+    }
+
+</table>
