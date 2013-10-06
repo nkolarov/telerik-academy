@@ -1,0 +1,9 @@
+﻿@model LibrarySystemMVC.Web.ViewModel.BookDetailsViewModel
+
+@(
+ Html.Kendo().DropDownListFor(m => m)
+    .DataValueField("Title")
+    .DataTextField("Title")
+    .BindTo((System.Collections.IEnumerable)ViewData["categories"])
+)
+

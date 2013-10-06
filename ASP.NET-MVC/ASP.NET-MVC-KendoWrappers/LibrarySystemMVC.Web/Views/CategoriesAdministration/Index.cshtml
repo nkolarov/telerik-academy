@@ -1,0 +1,63 @@
+﻿@using LibrarySystemMVC.Web.ViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Categories Administration</h2>
+
+@(Html.Kendo()
+    .Grid<CategoryViewModel>()
+        .Name("Categories-Administration")
+    .Pageable(page =>
+        {
+            page.PreviousNext(true);
+            page.Numeric(true);
+        })
+    .Sortable(sort =>
+        {
+            sort.SortMode(GridSortMode.SingleColumn);
+        })
+    .Editable(edit =>
+        {
+            edit.Mode(GridEditMode.InLine);
+        })
+    .Filterable()
+    .Navigatable()    
+    .Resizable(resize => resize.Columns(true))
+    .Columns(col =>
+        {
+            col.Bound(m => m.Title);
+            col.Command(com =>
+                        {
+                            com.Edit();
+                            com.Destroy();
+                        }).Title("Commands");
+        })
+    .ToolBar(tool =>
+        {
+            tool.Create();
+        })
+    .DataSource(data =>
+    {
+        data.Ajax()
+            .ServerOperation(true)
+            .PageSize(5)
+            .Model(m =>
+            {
+                m.Id("Id");
+            })
+            .Create("CreateCategory", "CategoriesAdministration")
+            .Events(ev => ev.Error("errorAlert"))
+            .Read("GetAll", "CategoriesAdministration")
+            .Update("UpdateCategory", "CategoriesAdministration")
+            .Destroy("DestroyCategory", "CategoriesAdministration");
+    })
+)
+
+<script>
+    function errorAlert() {
+        alert("Error!");
+    }
+</script>
+

@@ -1,0 +1,33 @@
+﻿@model LibrarySystemMVC.Web.Models.HomePageViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="hero-unit">
+    <h1>Categories and Books</h1>
+    <div>
+        @using (Html.BeginForm("Search", "Home", FormMethod.Post))
+        {
+            @(Html
+                .Kendo()
+                .AutoComplete()
+                .Name("queryString")
+                .BindTo(Model.BooksDetails)
+                .DataTextField("Title")
+                .Filter(FilterType.Contains)
+                .MinLength(2)
+                .Placeholder("Search"))
+
+            <input type="submit" value="Search" class="btn"/>
+        }
+    </div>
+<div class="alert alert-block">
+    @(Html.Kendo()
+            .TreeView()
+            .Name("tree-view")
+            .BindTo(Model.TreeViewData)
+    )
+
+</div>
+</div>

@@ -1,0 +1,24 @@
+﻿@model IEnumerable<LibrarySystemMVC.Web.ViewModel.BookDetailsViewModel>
+
+@{
+    ViewBag.Title = "Search";
+}
+
+@foreach (var book in Model)
+{
+    <h2>Finded Books</h2>
+
+    <div>
+        <strong>Title</strong>
+        <p>@book.Title</p>
+    </div>
+    <div>
+        <strong>Author</strong>
+        <p>@book.Author</p>
+    </div>
+    <div>
+        @Html.ActionLink("Details", "BookDetails", "Home", new { id = book.Id}, new { @class = "btn"})
+    </div>
+}
+
+<div>@Html.ActionLink("Back to Index", "Index", "Home")</div>

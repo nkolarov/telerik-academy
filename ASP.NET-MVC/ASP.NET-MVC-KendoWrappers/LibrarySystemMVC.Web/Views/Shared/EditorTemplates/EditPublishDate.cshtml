@@ -1,0 +1,8 @@
+﻿@model DateTime?
+
+@(Html.Kendo().DateTimePicker()
+                .Name("InvoiceDate")
+                .Value(Model == null ? DateTime.Now : @Model)
+                .Format("dd.MM.yyyy")
+)
+

@@ -1,0 +1,67 @@
+﻿@using LibrarySystemMVC.Web.ViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Books Administration</h2>
+
+@(Html.Kendo()
+    .Grid<BookDetailsViewModel>()
+    .Name("Books-Administration")
+    .Pageable(page =>
+        {
+            page.PreviousNext(true);
+            page.Numeric(true);
+        })
+    .Sortable(sort =>
+        {
+            sort.SortMode(GridSortMode.SingleColumn);
+        })
+    .Editable(edit =>
+        {
+            edit.Mode(GridEditMode.PopUp).TemplateName("EditBook");
+        })
+    .Filterable()
+    .Navigatable()    
+    .Resizable(resize => resize.Columns(true))
+    .Columns(col =>
+        {
+            col.Bound(m => m.Title);
+            col.Bound(m => m.Author);
+            col.Bound(m => m.Description);
+            col.Bound(m => m.CategoryName);
+            col.Bound(m => m.PublishDate);
+            col.Command(com =>
+                        {
+                            com.Edit();
+                            com.Destroy();
+                        }).Title("Commands");
+        })
+    .ToolBar(tool =>
+        {
+            tool.Create();
+        })
+    .DataSource(data =>
+    {
+        data.Ajax()
+            .ServerOperation(true)
+            .PageSize(5)
+            .Model(m =>
+            {
+                m.Id("Id");
+            })
+            .Create("CreateBook", "BooksAdministration")
+            .Events(ev => ev.Error("errorAlert"))                   
+            .Read("GetAll", "BooksAdministration")
+            .Update("UpdateBook", "BooksAdministration")
+            .Destroy("DestroyBook", "BooksAdministration");
+    })
+)
+
+<script>
+    function errorAlert() {
+        alert("Error!");
+    }
+</script>
+

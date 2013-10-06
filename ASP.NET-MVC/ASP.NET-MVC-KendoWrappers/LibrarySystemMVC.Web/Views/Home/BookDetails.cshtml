@@ -1,0 +1,29 @@
+﻿@model LibrarySystemMVC.Web.ViewModel.BookDetailsViewModel
+
+@{
+    ViewBag.Title = "BookDetails";
+}
+
+<h2>BookDetails</h2>
+
+<div>
+    <strong>Title</strong>
+    <p>@Model.Title</p>
+</div>
+<div>
+    <strong>Publish Date</strong>
+    <p>@Model.PublishDate</p>
+</div>
+<div>
+    <strong>Description</strong>
+    <p>@Model.Description</p>
+</div>
+<div>
+    <strong>Category</strong>
+    <p>@Model.CategoryName</p>
+</div>
+<div>
+    <strong>Author</strong>
+    <p>@Model.Author</p>
+</div>
+<div>@Html.ActionLink("Back to Index", "Index", "Home")</div>
