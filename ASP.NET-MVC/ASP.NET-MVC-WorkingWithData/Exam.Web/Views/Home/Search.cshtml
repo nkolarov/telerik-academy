@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Exam.Models.Tweet>
+@{
+    ViewBag.Title = "SearchByTag";
+}
+
+<h2>Search By Tag</h2>
+
+@using (Ajax.BeginForm("SearchByTag", new AjaxOptions
+{
+    UpdateTargetId = "results",
+    InsertionMode = InsertionMode.Replace
+}))
+{
+    <input type="text" name="tag" placeholder="Enter a tag" />
+    <input type="submit" />
+}
+
+<div id="results">
+</div>

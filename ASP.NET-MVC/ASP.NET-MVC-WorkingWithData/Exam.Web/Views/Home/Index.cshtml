@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Exam.Models.Tweet>
+@{
+    ViewBag.Title = "Your Tweets";
+}
+
+<div class="hero-unit">
+    <h1>Your tweets:</h1>
+</div>
+<div class="row">
+    @foreach (var tweet in Model)
+    {
+        <div>
+            <h3>Text</h3>
+            <div>@tweet.Text</div>
+        </div>
+        <div>
+            <h3>Author</h3>
+            <div>@tweet.Author.UserName</div>
+        </div>
+        <div>
+            <h3>DatePosted</h3>
+            <div>@tweet.DatePosted</div>
+        </div>
+       
+    }
+</div>
