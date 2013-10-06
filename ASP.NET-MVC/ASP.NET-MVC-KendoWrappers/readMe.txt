@@ -1,18 +1,18 @@
-01. Create the WebForms “Library System” exam with ASP.NET MVC and Kendo UI Server Side Wrappers using as much widgets as you can: 
+01. Create the WebForms вЂњLibrary SystemвЂќ exam with ASP.NET MVC and Kendo UI Server Side Wrappers using as much widgets as you can: 
 TreeView for the Home page
 Grid for the Administration
 AutoComplete for the Search input 
 DropDownList for category selection
 Others
 
-WebForms “Library System” exam :https://github.com/nkolarov/telerik-academy/blob/master/ASP.NET-Web-Forms/ASP.NET-Exam/ASP.NET-Web-Forms-2013-Library-System.docx
+WebForms вЂњLibrary SystemвЂќ exam :https://github.com/nkolarov/telerik-academy/blob/master/ASP.NET-Web-Forms/ASP.NET-Exam/ASP.NET-Web-Forms-2013-Library-System.docx
 
-Ресурсите са за Kendo UI MVC Wrappers са изтрити от гледна точка на авторки права и лиценз.
+Р РµСЃСѓСЂСЃРёС‚Рµ СЃР° Р·Р° Kendo UI MVC Wrappers СЃР° РёР·С‚СЂРёС‚Рё РѕС‚ РіР»РµРґРЅР° С‚РѕС‡РєР° РЅР° Р°РІС‚РѕСЂРєРё РїСЂР°РІР° Рё Р»РёС†РµРЅР·.
 
-За да стартирате демото:
+Р—Р° РґР° СЃС‚Р°СЂС‚РёСЂР°С‚Рµ РґРµРјРѕС‚Рѕ:
 
-1. Инсталирайте trial версията на продукта Kendo UI Complete for ASP.NET MVC от http://www.kendoui.com/download.aspx
-2. Следвайте инструкциите от http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction#using-kendo-ui-in-asp.net-mvc-4-application
-3. Скриптовете се слагат в папка ~/Scripts/Kendo/
-4. Темите и стиловете се слагат в папка ~/Content/Kendo
+1. РРЅСЃС‚Р°Р»РёСЂР°Р№С‚Рµ trial РІРµСЂСЃРёСЏС‚Р° РЅР° РїСЂРѕРґСѓРєС‚Р° Kendo UI Complete for ASP.NET MVC РѕС‚ http://www.kendoui.com/download.aspx
+2. РЎР»РµРґРІР°Р№С‚Рµ РёРЅСЃС‚СЂСѓРєС†РёРёС‚Рµ РѕС‚ http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction#using-kendo-ui-in-asp.net-mvc-4-application
+3. РЎРєСЂРёРїС‚РѕРІРµС‚Рµ СЃРµ СЃР»Р°РіР°С‚ РІ РїР°РїРєР° ~/Scripts/Kendo/
+4. РўРµРјРёС‚Рµ Рё СЃС‚РёР»РѕРІРµС‚Рµ СЃРµ СЃР»Р°РіР°С‚ РІ РїР°РїРєР° ~/Content/Kendo
 5. Enjoy!
